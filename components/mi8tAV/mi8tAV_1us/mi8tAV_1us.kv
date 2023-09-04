@@ -1,0 +1,70 @@
+<mi8tAV_1us>:
+    name: "Mi8tAV_1us"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ 1 УКАЗАТЕЛЯ СКОРОСТИ УС-35К"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- несоответствие показаний режиму работы двигателей (общему шагу и частоте вращения трубокомпрессоров);\n- неустойчивое положение стрелки указателя;\n- сравнение с показаниями других приборов (второго указателя скорости, вариометра, авиагоризонта)."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе ЛЕВОГО указателя скорости необходимо перейти на контроль скорости по ПРАВОМУ указателю, проверить включение обогрева ПВД (при полете в условиях обледенения) и продолжать выполнение задания."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

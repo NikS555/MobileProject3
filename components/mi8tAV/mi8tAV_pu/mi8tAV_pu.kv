@@ -1,0 +1,113 @@
+<mi8tAV_pu>:
+    name: "Mi8tAV_pu"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОЛНЫЙ ОТКАЗ ПУТЕВОГО УПРАВЛЕНИЯ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: " При разрушении привода рулевого винта вертолет резко разварачивается влево и кренится вправо"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "[u]НА ВИСЕНИИ У ЗЕМЛИ[/u]:\n - удержать вертолета от кренения;\n - произвести посадку, плавно уменьшая общий шаг несущего винта и удерживая по возможности вертолет в горизонтальном положении."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color]\n [u]ЗАПРЕЩАЕТСЯ:[/u] ДЛЯ ПРЕКРАЩЕНИЯ РАЗВОРОТА НА ВИСЕНИИ ПЕРЕВОДИТЬ ВЕРТОЛЕТ В РАЗГОН."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[u]В ПОСТУПАТЕЛЬНОМ ПОЛЕТЕ:[/u]\n - перейти на режим самовращения несущего винта,для чего энергично уменьшить шаг несущего винта до минимального значения;\n - отклонением ручки управления удержать вертолет от кренения и резкого изменения угла тангажа;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- путевое управление при снижении вертолета осуществлять креном, а также кратковременными переходами от режима самовращения к моторному снижению и обратно, изменяя мощность двигателей коррекцией газа и шагом несущего винта;\n - перед посадкой на высоте 50...100 м выключить двигатели."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

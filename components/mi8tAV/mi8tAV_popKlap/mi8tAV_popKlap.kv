@@ -1,0 +1,170 @@
+<mi8tAV_popKlap>:
+    name: "Mi8tAV_popKlap"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "А). ОТКАЗ ПОПЛАВКОВОГО КЛАПАНА В ЗАКРЫТОМ ПОЛОЖЕНИИ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- уменьшение топлива в расходном баке (загорание светосигнального табло [color=#FF0000]ОСТАЛОСЬ 270 Л[/color] при работающих перекачивающих насосах (горят табло [color=#00FF00]ЛЕВЫЙ РАБОТАЕТ[/color], [color=#00FF00]ПРАВЫЙ РАБОТАЕТ[/color])"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Если светосигнальное табло [color=#FF0000]ОСТАЛОСЬ 270 Л[/color] горит устойчиво, замерить количество топлива в расходном баке, а затем в течение 5 минут проследить за его выработкой."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При уменьшении уровня топлива в расходном баке открыть перепускной кран, установив переключатель ПЕРЕПУСК ТОПЛИВА в положение ОТКР, и дальнейшую выработку производить только в ручную."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Не допуская переполнения расходного бака и выбивания топлива из дренажа. При этом количество топлива в расходном баке не должно превышать 370-390л."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "Б). ОТКАЗ ПОПЛАВКОВОГО КЛАПАНА В ОТКРЫТОМ ПОЛОЖЕНИИ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- повышенный расход топлива не соответствующий режиму полета;\n- течь топлива из дренажа расходного бака;\n- появление запаха топлива."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- выключить перекачивающие насосы, установив выключатели НАСОСЫ БАКОВ ЛЕВЫЙ и ПРАВЫЙ в выключенное (вниз) положение, при этом гаснут табло [color=#00FF00]ЛЕВЫЙ РАБОТАЕТ[/color], [color=#00FF00]ПРАВЫЙ РАБОТАЕТ[/color];"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- включением/выключением перекачивающих насосов вручную регулировать дальнейшую выработку топлива, не допуская уменьшения количества топлива в расходном баке менее 270л и увеличения более 390л;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- работу насосов контролировать по загоранию (погасанию) табло [color=#00FF00]ЛЕВЫЙ РАБОТАЕТ[/color], [color=#00FF00]ПРАВЫЙ РАБОТАЕТ[/color]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

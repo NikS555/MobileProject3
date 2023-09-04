@@ -1,0 +1,357 @@
+<mi8QI_mas>:
+    name: "Mi8QI_mas"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                Label:
+                    text: "Максимальная взлетная (посадочная) масса вертолета в транспортном и пассажирском вариантах - 12000 кг."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Максимально допустимая взлетная (посадочная) масса вертолета в зависимости от условий взлета (посадки) определяется в соответствии с рекомендациями РЛЭ 3.1.3"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При выполнении полетов с грузом на внешней подвеске максимально допустимую массу вертолета для взлетов и посадок необходимо определятьпо номограмме РЛЭ, рис. 3.1.2 (без использования влияния воздушной подушки)."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При выполнении полетов по монтажу полетная масса вертолета в зависимости от метеоусловий должна определяться в соответствии с данными номограммы РЛЭ, рис. 3.1.2 (без использования влияния воздушной подушки) и уменьшаться на [u]500 кг[/u]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При этом устойчивое висение на необходимой высоте с грузом на внешней подвеске должно обеспечиваться при частоте вращения роторов турбокомпрессоров двигателей, уменьшенных не менее, чем [u]на 1%[/u] по сравнению со взлетной частотой вращения роторов турбокомпрессоров двигателей данного вертолета."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]ПРЕДУПРЕЖДЕНИЕ.[/color] \n  ПОЛЕТЫ ПО ППП И НАД ВОДНЫМ ПРОСТРАНСТВОМ НЕОБХОДИМОВЫПОЛНЯТЬ С ПОЛЕТНОЙ МАССОЙ, ОБЕСПЕЧИВАЮЩЕЙ ПОЛЕТ БЕЗ СНИЖЕНИЯ В СЛУЧАЕ ОТКАЗА ОДНОГО ИЗ ДВИГАТЕЛЕЙ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Максимальная масса груза, перевозимого внутри грузовой кабины - 4 000 кг."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Максимальная масса груза, перевозимого на внешней подвеске:\n- шарнирно-маятниковой - 2 500 кг;\n- тросовой - 3 000 кг."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Максимальное количество людей, перевозимых на вертолете:\n- в пассажирском варианте - 28 чел;\n- в транспортном варианте - 22 чел."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Предельно допустимая центровка вертолета:\n- передняя: - +370 мм;\n- задняя: - - 80 мм."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[u]При температуре воздуха равной и выше стандартной[/u], массу определенную по номограмме РЛЭ, рис . 3.1.2 (без учета влияния воздушной подушки) необходимо [u]уменьшить на 350 кг[/u]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[u]Взлеты в условиях фактической видимости ниже минимума для посадки[/u] могут выполняться на аэродромах (вертодромах), минимальные размеры которых указаны в [color=#D2B48C]РАЗМЕРЫ ПЛОЩАДОК[/color]. Взлетная масса определяется по номограмме РЛЭ, рис. 6.6.1 и [u]уменьшается на 1,3т[/u], [u]при включении ПОС двигателей - на 2т[/u]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РАЗМЕРЫ ПЛОЩАДОК"
+                    size_hint: 1, None
+                    md_bg_color: "tan"
+                    on_release: root.manager.current="Mi8QI_plosh"; root.manager.transition.direction="left"
+
+                Label:
+                    text: "Высота висения вертолета с массой, для взлета и посадки БЕЗ ИСПОЛЬЗОВАНИЯ ВЛИЯНИЯ ВОЗДУШНОЙ ПОДУШКИ, должна составлять [u]не менее 20 м от земли до колес шасси на взлетном режиме работы двигате[/u]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Определенная по номограммам максимально допустимая масса для взлета должна быть проверена на висении перед полетом, так как у различных вертолетов тяга на висении при взлетном режиме работы двигателей может быть неодинаковой."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "В случае необходимости масса вертолета должна быть уменьшена. Увеличение массы по сравнению с рассчитанной по номограммам [color=#FF0000]ЗАПРЕЩАЕТСЯ[/color]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При расчете максимально допустимой массы по номограммам скорость встречного ветра необходимо брать по минимальному значению, а скорость попутного ветра - по максимальному значению."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]Примечание.[/color] При отсутствии данных о температуре окружающего воздуха и скорости ветра на месте предполагаемой посадки для расчета максимально допустимой массы при различных высотах расположения площадок взлета и посадки необходимо:"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- температуру на месте посадки определять по температуре аэродрома вылета с учетом ее изменения согласно МСА на б,5°С на каждые 1000 м барометрической высоты, если на аэродроме вылета температура ниже стандартной;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- если на аэродроме вылета температура выше или равна стандартной, то к полученному результату надо прибавить 6°С. При этом скорость ветра принимается равной нулю."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]ПРЕДУПРЕЖДЕНИЕ.[/color] \n  ПЕРЕД ВЫПОЛНЕНИЕМ ПОСАДКИ НЕОБХОДИМО В ПОЛЕТЕ ПРОВЕРИТЬ РАССЧИТАННУЮ РАНЕЕ МАКСИМАЛЬНО ДОПУСТИМУЮ МАССУ ДЛЯ ПОСАДКИ, ИСХОДЯ ИЗ ФАКТИЧЕСКИХ ДАННЫХ 0 ВЫСОТЕ РАСПОЛОЖЕНИЯ АЭРОДРОМА ИЛИ ПЛОЩАДКИ, ИХ РАЗМЕРОВ И ВОЗДУШНЫХ ПОДХОДОВ К НИМ, ТЕМПЕРАТУРЫ ОКРУЖАЮЩЕГО ВОЗДУХА И СКОРОСТИ ВЕТРА."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Высота висения вертолета с массой, для взлета и посадки С ИСПОЛЬЗОВАНИЕМ ВЛИЯНИЯ ВОЗДУШНОЙ ПОДУШКИ, должна составлять [u]не менее 3,0 м от земли до колес шасси на взлетном режиме работы двигате[/u]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " При полетах с площадок, позволяющих выполнять взлет и посадку с коротким разбегом и пробегом, максимально допустимая масса вертолета для взлета и посадки С ИСПОЛЬЗОВАНИЕМ ВЛИЯНИЯ ВОЗДУШНОЙ ПОДУШКИ [u]увеличивается на 800 кг[/u]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]Примечание.[/color]\n Вертолет должен устойчиво висеть на высоте [u]не менее 1 м от земли до колес шасси на взлетном режиме работы двигателей[/u]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]ПРЕДУПРЕЖДЕНИЕ.[/color] \n  1. ПРИ НАЛИЧИИ НА ВЕРТОЛЕТЕ [u]ПЗУ[/u] ДВИГАТЕЛЕЙ НЕОБХОДИМО ВЗЛЕТНУЮ (ПОСАДОЧНУЮ) МАССУ, ПОЛУЧЕННУЮ ПО НОМОГРАММАМ РЛЭ, РИС. 3.1.1 И 3.1.2, УМЕНЬШИТЬ НА ВЕЛИЧИНЫ,УКАЗАННЫЕ НИЖЕ:"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " С ВЫКЛЮЧЕННЫМИ ПЗУ:\n при tнв не более 25°С - уменьшить на 180 кг;\n при t B более 25°С - уменьшить на 330 кг;\n С ВКЛЮЧЕННЫМИ ПЗУ:\n при tнв не более 25°С - уменьшить на 260 кг;\n при t B более 25°С - уменьшить на 480 кг."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "2. МАКСИМАЛЬНО ДОПУСТИМУЮ МАССУ ВЕРТОЛЕТА, ОПРЕДЕЛЕННУЮ ПО НОМОГРАММАМ РЛЭ, РИС. 3.1.1 И 3.1.2, В СЛУЧАЕ НЕОБХОДИМОСТИ ВКЛЮЧЕНИЯ [u]ПОС[/u] ДВИГАТЕЛЕЙ И ИХ ВОЗДУХОЗАБОРНИКОВ НЕОБХОДИМО [u]УМЕНЬШИТЬ НА 400 КГ.[/u] "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8QI_ogr"; root.manager.transition.direction="left"

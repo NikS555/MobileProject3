@@ -1,0 +1,419 @@
+<mi8tAV_2dv>:
+    name: "Mi8tAV_2dv"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ ДВУХ ДВИГАТЕЛЕЙ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе в полете двух двигателей:\n- резкое падение частоты вращения несущего винта и турбокомпрессоров двигателей;\n - изменение шума двигателей и трансмиссии;\n - кренение и рыскание вертолета вправо с переходом на снижение."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе в полете двух двигателей КВС  немедленно перевести вертолет на режим самовращения несущего винта, для чего необходимо:"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- уменьшить ОШ НВ до минимального. Рекомендуется в процессе снижения РШГ удерживать частоту вращения в пределах 98-100%;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- устранить отклонением левой педали и движением РУ влево и на себя разворачивающий, кренящий и пикирующий моменты. Появившиеся нагрузки на органах управления снять автотриммерами;"
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- дать команду бортмеханику выключить двигатели кранами останова и закрыть перекрывные краны топлива вертолета;\n - выбрать площадку предпочтительно с заходом на посадку против ветра;\n- произвести посадку на РСНВ."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " Расчет на посадку необходимо уточнять изменением скорости планирования.\n Скорость наибольшей дальности при снижении 180 км/ч."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " Минимальная потеря высоты при выполнении разворота на 180° с углом крена 20° во время снижения на РСНВ происходит на Vпр около 60км/ч и составляет примерно 250м; при развороте на Vnp=180км/ч, обеспечивающей максимальную дальность при снижении, потеря высоты составляет примерно 650м."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 20
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color]\n 1. ПРИ ОТКАЗЕ ДВУХ ДВИГАТЕЛЕЙ РЕЗКО УМЕНЬШАЕТСЯ ЧАСТОТА ВРАЩЕНИЯ НВ, ПОЭТОМУ ЗАДЕРЖКА В УМЕНЬШЕНИИ ШАГА ПРИ ТАКОМ ОТКАЗЕ НЕДОПУСТИМА. ЗНАЧИТЕЛЬНОЕ УМЕНЬШЕНИЕ ЧАСТОТЫ ВРАЩЕНИЯ ПРИВОДИТ К УХУДШЕНИЮ УПРАВЛЯЕМОСТИ ВЕРТОЛЕТА."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "2. ПРИ ОТКАЗЕ 2х ДВИГАТЕЛЕЙ В ПОЛЕТЕ НА ПОСТУПАТЕЛЬНОЙ СКОРОСТИ ОТКЛОНЕНИЕ РУ ОТ СЕБЯ ДО ПЕРЕХОДА НА УСТАНОВИВШУЮСЯ ЧАСТОТУ ВРАЩЕНИЯ НВ ПРИВОДИТ К РЕЗКОМУ ЕЕ УМЕНЬШЕНИЮ ИЗ-ЗА УХУДШЕНИЯ АЭРОДИНАМИЧЕСКИХ УСЛОВИЙ РАБОТЫ ДАЖЕ ПРИ НЕМЕДЛЕННОМ (ВСЛЕД ЗА ОТКАЗОМ ДВИГАТЕЛЕЙ) ЭНЕРГИЧНОМ СБРОСЕ ШАГА."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDLabel:
+                    text: "ТЕХНИКА ВЫПОЛЕНИЯ ПОСАДКИ С ПРОБЕГОМ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Посадку на РСНВ с пробегом следует выполнять на площадки (аэродромы), пригодные для выполнения посадок с пробегом 100...150 м. Такую посадку КВС должен выполнять в следующем порядке:"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- РУ и педалями устранить возникшую разбалансировку и уточнить направление захода на посадку, [u]ВЫКЛЮЧИТЬ АВТОПИЛОТ[/u];\n - на снижении выдерживать скорость 100-120 км/ч при встречном ветре у земли не более 5 м/с и 120-140 км/ч при ветре у земли более 5 м/с;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- частоту вращения НВ рекомендуется сохранять в пределах 98-100% изменением ОШ;\n - с H=120-100 м отклонением ручки управления на себя начать постепенное уменьшение поступательной скорости;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- с H=30-40м плавным, соразмерным приближению к земле движением РШГ начать увеличивать ОШ НВ так, чтобы к моменту касания земли основными колесами он был максимальным, вертикальная скорость была погашена до 0,1-0,2 м/с, поступательная равна 50-70 км/ч;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на Н=3-4м отдачей РУ от себя создать посадочный угол тангажа вертолета;\n - после приземления вертолета уменьшить общий шаг до минимального значения и опустить переднее колесо. При необходимости сокращения длины пробега следует использовать тормоза колес."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FFA500]ПРИМЕЧАНИЯ.[/color]\n 1. Если увеличение ОШ на режиме предпосадочного торможения было начато на высоте больше рекомендуемой или на рекомендуемой высоте, но с темпом, превышающим необходимый,"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "нужно приостановить увеличение ОШ или сбросить его на 3-4 гр/с последующим энергичным затяжелением НВ так, чтобы к моменту приземления (на высоте 0,5м) шаг был максимальным."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "2. При посадке на РСНВ с предельно задней центровкой необходимо во избежание касания хвостовой опорой о грунт меньше отклонять на себя РУ при гашении поступательной скорости и несколько больше отклонять ее от себя для создания посадочного положения вертолета перед приземлением, что приводит к большей поступательной скорости приземления."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+
+                MDLabel:
+                    text: "ТЕХНИКА ВЫПОЛЕНИЯ ПОСАДКИ С КОРОТКИМ ПРОБЕГОМ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Посадку на РСНВ с коротким пробегом целесообразно выполнять на площадке в сложных рельефных условиях. Такую посадку КВС должен выполнять в следующем порядке:"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при отказе (выключении) двух двигателей быстрым сбросом ОШ перевести вертолет на РСНВ с одновременным энергичным гашением поступательной скорости полета до Vпр 70-90 км/ч при скорости ветра у земли не более  5 м/с и 90-110 км/ч - более 5 м/с;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "- в процессе снижения выдерживать максимальную частоту врещения НВ, снять нагрузки с РУ, ВЫКЛЮЧИТЬ АВТОПИЛОТ;\n - по достижении H=50-35 м взятием РУ на себя увеличить угол тангажа вертолета примерно на 10°;\n - на H=30-20 м выполнить подсечку- энергичное увеличение ОШ НВ на 3...6° за 0,5-1,0с;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- по мере приближения вертолета к земле производить дальнейшее увеличение ОШ так, чтобы в момент приземления (высота 0,5 м) он был максимальным. Непосредственно перед приземлением увеличение ОШ производить более энергично;\n - ошибки в темпе увеличения шага несущего винта исправлять согласно [color=#FFA500]ПРИМЕЧАНИЙ[/color];"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- перед приземлением, начиная с Н=6-4 м от земли до колес шасси, плавным отклонением РУ от себя придать вертолету посадочный тангаж (во избежание касания земли хвостовой опорой);\n - приземление производить на основные колеса с незначительно опущенной хвостовой балкой;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при выполнении вынужденной посадки на лес выбрать, по возможности, для посадки наиболее ровный участок леса с расстоянием между стволами деревьев не более 10...15 м, избегая отдельно стоящих больших деревьев. Посадку выполнять в соответствии с изложенными рекомендациями."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При расчете на посадку за поверхность приземления следует принимать уровень верхушек деревьев. При этом окончательное гашение поступательной и вертикальной скоростей производить взятием РУ на себя и энергичным увеличением ОШ до максимального значения в момент касания фюзеляжем верхушек деревьев."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При посадке на лес высотой менее 4...5 м за поверхность приземления следует принимать землю;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при вынужденных посадках на местность, имеющую сложный рельеф, окончательное гашение поступательной скорости вертолета следует выполнять энергичным взятием РУ на себя до упора при верхнем положении РШГ сразу после приземления вертолета. После остановки вертолета перевести РУ в нейтральное положение и за 3-5с сбросить ОШ."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Посадку на РСНВ на пересеченную местность, болото, на воду и ледянной покров (когда толщина льда неизвестна или площадка имеет значительные неровности: покрыта трещинами и торосами) следует выполнять с околонулевой поступательной скоростью (без пробега). Пилотирование вертолета должно выполняться как для посадки [u]С КОРОТКИМ ПРОБЕГОМ[/u]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "При этом гашение поступательной скорости должно выполняться энергичнее (тангаж увеличивается на угол 10...15°), а темп взятия шага должен быть выше."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+
+
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

@@ -1,0 +1,148 @@
+<mi8tAV_pojar_KO>:
+    name: "Mi8tAV_pojar_KO"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОЖАР В ОТСЕКЕ ОБОГРВАТЕЛЯ В ПОЛЕТЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                Label:
+                    text: "[color=#FFA500]ВНИМАНИЕ.[/color] ПРИ ОБНАРУЖЕНИИ ПОЖАРА  В ОТСЕКЕ ОБОГРЕВАТЕЛЯ НЕОБХОДИМО ПЕРЕВЕСТИ ВЕРТОЛЕТ В РЕЖИМ АВАРИЙНОГО СНИЖЕНИЯ ,ВЫКЛЮЧИТЬ НЕНУЖНЫЕ ДЛЯ ЗАВЕРШЕНИЯ ПОЛЕТА ПОТРЕБИТЕЛИ ЭЛЕКТРОЭНЕРГИИ, ПРОИЗВЕСТИ ПОСАДКУ И ОБЕСТОЧИТЬ ВЕРТОЛЕТ"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 7
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При возникновении пожара в отсеке обогревателя  должны загореться ; \n- красное светосигнальное табло \n[color=#FF0000]ПОЖАР В ОТСЕКЕ ОБОГРЕВАТЕЛЯ [/color];\n - желтое светосигнальное табло [color=#FFFF00]КРАН ОТКРЫТ[/color]; \n-желтое светосигнальное табло [color=#FFFF00]СРАБОТ. БАЛЛОНЫ AВТОМАТ.ОЧЕРЕДИ[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "В этом случае необходимо: \n- поставить переключатель рода работ обогревателя АВТОМАТ - РУЧНОЕ в нейтральное положение;\n - установить выключатели ВЕНТИЛ и ОБОГРЕВ в положение ВЫКЛ;\n - отключить АЗС: питания топливного насоса,подогревателя керосина,цепи управления обогревателя;\n - нажать кнопку ВЫКЛ.СИГН. ПОЖАР;\n - закрыть заслонку воздухозаборника обогревателя."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если пожар ликвидирован , красное светосигнальное табло [color=#FF0000]ПОЖАР В ОТСЕКЕ ОБОГРЕВ[/color], должно погаснуть."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Убедится визуально в ликвидации пожара;\n - поставить выключатель системы пожаротушения в положение ВЫКЛ., а затем в положение ВКЛЮЧ."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 7
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color] ГЛАВНЫЙ ВЫКЛЮЧАТЕЛЬ СИСТЕМЫ ПОЖАРОТУШЕНИЯ СЛЕДУЕТ СТАВИТЬ В ПОЛОЖЕНИЕ ВЫКЛ. НЕ РАНЕЕ ЧЕМ ЧЕРЕЗ 20 С ПОСЛЕ СРАБАТЫВАНИЯ БАЛЛОНОВ ДЛЯ УРАВНИВАНИЯ ДАВЛЕНИЯ В ТРУБОПРОВОДЕ С АТМОСФЕРНЫМ. ПРИ НАЛИЧИИ В СИСТЕМЕ ДАВЛЕНИЯ ЭЛЕКТРОМАГНИТНЫЕ КРАНЫ ПОСЛЕ ИХ ЗАКРЫТИЯ НЕ ОТКРОЮТСЯ. "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если пожар НЕ ЛИКВИДИРОВАН , красное светосигнальное табло [color=#FF0000]ПОЖАР В ОТСЕКЕ ОБОГРЕВ.[/color] продолжает гореть гореть или продолжение пожара установлено ВИЗУАЛЬНО"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 12
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "В этом случае необходимо нажать кнопку включения 2-й очереди пожаротушения . Должно загореться желтое светосигнальное табло [color=#FFFF00]СРАБОТ.БАЛЛОНЫ РУЧН.ОЧЕРЕДИ[/color]. "
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

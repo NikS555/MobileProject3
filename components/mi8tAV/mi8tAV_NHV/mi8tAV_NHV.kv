@@ -1,0 +1,139 @@
+<mi8tAV_NHV>:
+    name: "Mi8tAV_NHV"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "НИЗКОЧАСТОТНЫЕ КОЛЕБАНИЯ ВЕРТОЛЕТА В ПОЛЕТЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+                    size_hint_y: None
+
+                Label:
+                    text: "Низкочастотные колебания вертолета в полете могут быть двух видов:"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- [u]ПЕРВЫЙ ВИД[/u] - колебания в вертикальной плоскости, возникающие преимущественно в наборе высоты с включенным автопилотом;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- [u]ВТОРОЙ ВИД[/u] - незначительные поперечные колебания, возникающие, как правило, на режимах моторного снижения или самовращения несущего винта."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При появлении колебаний [u]ПЕРВОГО ВИДА[/u] необходимо выключить автопилот. Если через 3...5 с после выключения автопилота колебания не прекратятся, изменить кратковременно режим полета уменьшением общего шага на 2 ... 3°"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "После исчезновения колебании включить автопилот, установить необходимый режим полета и продолжить выполнение задания."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если после включения автопилота снова возникнут колебания выключить автопилот, при необходимости, изменить режим полета и завершить выполнение задания, не включая автопилот, или произвести посадку на ближайшем аэродроме."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При появлении колебаний [u]ВТОРОГО ВИДА[/u] необходимо отклонить педаль путевого управления и выполнить полет с левым или правым скольжением, определяемым по отклонению шарика указателя скольжения на величину одного диаметра."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При полете со скольжением поперечные колебания должны исчезнуть. После вывода вертолета из режима скольжения продолжить выполнение задания."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

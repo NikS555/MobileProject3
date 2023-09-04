@@ -1,0 +1,63 @@
+<mi8tAV_siggen>:
+    name: "Mi8tAV_siggen"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "СИГНАЛИЗАЦИЯ ОТКАЗА ГЕНЕРАТОРА, ОТКАЗ В РАБОТЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+                    size_hint_y: None
+
+                Label:
+                    text: "Всего агрегатов на вертолете - 2\nДопустимое количество неисправных агрегатов - 2"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "Условия, при которых разрешается перелет"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Если исправны амперметры, усилить наблюдение за показаниями амперметров"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV_MEL"; root.manager.transition.direction="left"

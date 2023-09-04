@@ -1,0 +1,112 @@
+<mi8QI_man>:
+    name: "Mi8QI_man"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                Label:
+                    text: "Развороты на висении у земли разрешается выполнять с угловой скоростью не более 12 град/с (полный оборот - не менее, чем за 30с). Прекращать вращение необходимо не менее, чем за 3с."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Управление шагом рулевого винта как в режиме разворотов у земли, так и в поступательном полете должно быть плавным; перекладка педалей от упора до упора должна осуществляться не быстрее чем за 3 с."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "РАЗВОРОТЫ И ВИРАЖИ ВЫПОЛНЯЮТСЯ:\n- при полетной массе более 11000 кг и высоте полета до 2 ООО м с углом крена [color=#FFA500]не более 30°[/color]\n- при полетной массе более 11000 кг и высоте полета более 2000 м с углом крена [color=#FFA500]не более 15°[/color];"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при полетной массе менее 11000 кг с углом крена [color=#FFA500]не более 30°[/color];\n- при полетах с включенным автопилотом и по приборам с углом крена [color=#FFA500]не более 15°[/color];\n- при полетах с грузом на внешней подвеске с углом крена [color=#FFA500]не более 15°[/color]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Развороты на режиме самовращения несущего винта выполняются с углом крена [color=#FFA500]не более 20°[/color].\n Развороты и виражи осуществляются во всем диапазоне допустимых скоростей."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]ПРЕДУПРЕЖДЕНИЕ.[/color]\n  ДЛЯ ПРЕДОТВРАЩЕНИЯ ВОЗМОЖНОГО УДАРА В ПОЛЕТЕ Л0ПАСТЯМИ НВ О ХВОСТОВУЮ БАЛКУ ЗАПРЕЩАЕТСЯ:\n - ИЗМЕНЕНИЕ ОШ НВ НА ПЕРЕХОДНЫХ РЕЖИМАХ ПОЛЕТА С ОДНОВРЕМЕННЫМ ЭНЕРГИЧНЫМ ОТКЛОНЕНИЕМ РУЧКИ УПРАВЛЕНИЯ В ПРОДОЛЬНОМ ОТНОШЕНИИ НА СКОРОСТЯХ СВЫШЕ 80 КМ/Ч ПО ПРИБОРУ;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- ОТКЛОНЕНИЕ РУЧКИ УПРАВЛЕНИЯ НА СЕБЯ ОТ НЕЙТРАЛЬНОГО ПОЛОЖЕНИЯ БОЛЕЕ ЧЕМ НА 1/2 ХОДА НА ВСЕХ РЕЖИМАХ ПОЛЕТА ПРИ ПОСТУПАТЕЛЬНЫХ СКОРОСТЯХ СВЫШЕ 80 КМ/Ч ПО ПРИБОРУ"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8QI_ogr"; root.manager.transition.direction="left"

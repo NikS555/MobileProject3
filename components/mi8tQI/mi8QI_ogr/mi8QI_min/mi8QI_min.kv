@@ -1,0 +1,196 @@
+<mi8QI_min>:
+    name: "Mi8QI_min"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                Label:
+                    text: "Все виды полетов разрешается выполнять в диапазоне температур воздуха от [color=#87CEFA]-50[/color] до [color=#FF4500]+40°С.[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#87CEEB]МЕТЕОУСЛОВИЯ ДЛЯ КОНТРОЛЬНОГО ВИСЕНИЯ.[/color]\n Высота нижней границы облаков (вертикальная видимость), ННго - 50м.\n Видимость - 500м."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "МИНИМУМЫ ДЛЯ ВЗЛЕТОВ И ПОСАДОК ПРИ ПОЛЕТАХ ПО ППП."
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                Label:
+                    text: "[color=#87CEEB]МИНИМУМЫ ДЛЯ ВЗЛЕТA[/color]\n Высота нижней границы облаков (вертикальная видимость), ННго - 30м.\n Видимость - 400м."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]Примечание.[/color] \n Взлет при фактических метеоусловиях хуже минимума для посадки на аэродроме вылета разрешается:"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на аэродромах с длиной ВПП не менее 600 м, имеющих дневную маркировку для выполнения взлетов днем и боковые огни ВПП для выполнения взлетов ночью;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- взлетная масса вертолета не превышает определенную из номограммы РЛЭ рис. 6.6.1 и уменьшенную на 1,3 т;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при наличии запасного аэродрома, время полета до которого не превышает 1 часа, а фактические и прогнозируемые метеоусловия не хуже минимума для посадки на нем."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При невыполнении хотя бы одного из этих условий решение на вылет принимается при метеоусловиях на аэродроме вылета не хуже минимума для посадки на нем."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#87CEEB]МИНИМУМЫ ДЛЯ ПОСАДКИ:[/color]\nА) ТОЧНЫЙ ЗАХОД НА ПОСАДКУ\n [u]По системам ILS[/u]\n Высота принятия решения Нпр - 60м\n Дальность видимости на ВПП, Lвид - 600м"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[u]По посадочному радиолокатору и приводным радиостанциям (РСП + ОСП)[/u]\n Высота принятия решения Нпр - 60м\n Дальность видимости на ВПП, Lвид - 600м"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[u]По посадочному радиолокатору (РСП)[/u]\n Высота принятия решения Нпр - 60м\n Дальность видимости на ВПП, Lвид - 600м"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Б) НЕТОЧНЫЙ ЗАХОД НА ПОСАДКУ\n [u]По двум приводным радиостанциям (ОСП)[/u] \n Высота принятия решения Нпр - 80м\n Дальность видимости на ВПП, Lвид - 800м"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[u]По одной приводной радиостанции (ОПРС)[/u]\n Высота принятия решения Нпр - 200м\n Дальность видимости на ВПП, Lвид - 2500м"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8QI_ogr"; root.manager.transition.direction="left"

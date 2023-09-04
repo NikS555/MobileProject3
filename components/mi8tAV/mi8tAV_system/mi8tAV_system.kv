@@ -1,0 +1,125 @@
+<mi8tAV_system>:
+    name: "Mi8tAV_system"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ СИСТЕМ И АГРЕГАТОВ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: " В случае появления в полете ненормальностей: постороннего шума, хлопков, рывков, тряски вертолета и т.п., что может свидетельствовать о наличии отказов силовой установки трансмиссиии, несущей системы, силовых элементов конструкции вертолета и пр.,\n - приборы контроля могут давать нормальные показания, поэтому точно установить причину ненормальности не представляется возможным."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "В таких случаях необходимо:\n - пилотировать вертолет плавно, избегая энергичных разворотов и кренов;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "- плавно действуя ручками циклического шага и ШАГ-ГАЗ, установить Vnp=110...130 км/ч, соответствующую минимальной потребной мощности при этом перевести вертолет в пологое снижение в зависимости от этапа, на котором обнаружена ненормальность;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "- подобрать с воздуха площадку, пригодную для посадки вертолета;\n - выполнить заход на посадку, при этом на предпосадочной прямой выдерживать Vnр=110...120 км/ч и скорость снижения 1,5...2 м/с;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- плавно пилотируя вертолет, выполнить посадку. Способ посадки вертолета выбрать в зависимости от имеющихся условий (запаса мощности на вертолете и посадочной площадки)."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FFA500]Примечания.[/color]\n  1. При выявлении в процессе снижения причины ненормальности КВС должен принять решение о дальнейших действиях в зависимости от сложившейся обстановки: продолжить полет или произвести посадку.\n 2. Экипаж вертолета должен усилить контроль за имеющимися контрольными приборами."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

@@ -1,0 +1,119 @@
+<mi8tAV_RS>:
+    name: "Mi8tAV_RS"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ РАДИОСТАНЦИЙ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+                    size_hint_y: None
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Отказ радиостанций определяется по отсутствию связи с диспетчером и с другими экипажами, находящимися в полете."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- при отсутствии связи необходимо через командную станцию убедиться, что внутреняя связь по СПУ-7 не нарушена;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- перевести регулятор громкости на максимальную слышимость и проверить работоспособность радиостанций на запасном канале;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при отсутствии связи и на запасном канале следует перейти на работу через связную радиостанцию:\n* переключатель на абонентском щитке СПУ перевести в положение CP,\n* установить радиосвязь с диспетчером, доложить ему о случившемся  и с его разрешения продолжать выполнение задания."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Для получения команды от диспетчера можно использовать приемники радиокомпасов."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "В ночном полете, при отсутствии радиосвязи, необходимо периодически обозначать свое местоположение включением фар, а при заходе на посадку - пуском сигнальных ракет любого цвета и миганием фары."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

@@ -1,0 +1,85 @@
+<mi8tAV_maslo_dv>:
+    name: "Mi8tAV_maslo_dv"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "УМЕНЬШЕНИЕ ДАВЛЕНИЯ МАСЛА, РОСТ ТЕМПЕРАТУРЫ МАСЛА В ДВИГАТЕЛЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При уменьшении давления масла в двигателе до значения менее 3 кгс/см до 2 кгс/см усилить контроль за параметрами работы этого двигателя. Выполнение задания прекратить и произвести посадку НА БЛИЖАЙШИЙ АЭРОДРОМ."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "При одновременном увеличении температуры масла от установившегося значения на 10-20°С двигатель выключить и действовать в соответствии с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При уменьшении давления масла в двигателе менее 2 кгс/см или повышении температуры масла в двигателе выше 125°С двигатель выключить и действовать в соответствии с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_1dv"; root.manager.transition.direction="left"
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

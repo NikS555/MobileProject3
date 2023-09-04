@@ -1,0 +1,68 @@
+<mi8tAV_270>:
+    name: "Mi8tAV_270"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ЗАГОРАНИЕ СВЕТОСИГНАЛЬНОГО ТАБЛО ОСТАЛОСЬ 270 Л"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                Label:
+                    text: "Если экипаж допустил выработку топлива более расчетной и остаток его составляет менее АНЗ на 30 мин полета, необходимо оценить возможность посадки на аэродром (основной или запасной) или на площадку, подобранную с воздуха."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При устойчивом загорании табло [color=#FF0000]ОСТАЛОСЬ 270 Л[/color] КВС обязан принять окончательное решение о месте посадки и произвести ее, не допуская полной выработки топлива, при этом пилотировать вертолет необходимо плавно, развороты производить координировано, избегать скольжений."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Необходимо иметь в виду, что при загорании табло [color=#FF0000]ОСТАЛОСЬ 270 Л[/color] возможен полет в течение [u]17 мин[/u] на скорости по прибору [u]220 км/ч[/u] и высоте [u]500 м[/u] до приземления. Дальность полета при этом составит [u]60 км (в штиль)[/u]. При неустойчивом висении возможно мигание табло [color=#FF0000]ОСТАЛОСЬ 270 Л[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

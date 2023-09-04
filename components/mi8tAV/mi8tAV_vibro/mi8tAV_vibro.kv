@@ -1,0 +1,161 @@
+<mi8tAV_vibro>:
+    name: "Mi8tAV_vibro"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ЗАГОРАНИЕ КРАСНОГО СВЕТОСИГНАЛЬНОГО ТАБЛО ОПАСНОЙ ВИБРАЦИИ ДВИГАТЕЛЯ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- загорания красного светосигнального табло [color=#FF0000]ЛЕВ. (ПРАВ.) ДВИГ. ВИБРАЦИЯ ОПАСНАЯ[/color];\n- уровень вибрации двигателя по показывающему прибору составляет 60 мм/с и более"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- второму пилоту нажать кнопку КОНТРОЛЬ ИВ-500, при этом должны гореть светосигнальные табло [color=#FFFF00]ЛЕВ. (ПРАВ.) ДВИГ. ВИБРАЦИЯ ПОВЫШЕН.[/color], [color=#FF0000]ЛЕВ. (ПРАВ.) ДВИГ. ВИБРАЦИЯ ОПАСНАЯ[/color], а значения уровня вибрации по показывающим приборам УК-68В должны находится в пределах 75...100 мм/с;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "- КВС изменить (снизить или повысить) режим работы двигателя (двигателей) с целью снижения вибрации до уровня, при котором гаснет красное светосигнальное табло опасной вибрации двигателя. После этого продолжить полет, усилив контроль за параметрами работы двигателя, и произвести посадку, в зависимости от местонахождения вертолета от рубежа ухода (возврата ), на аэродроме назначения или вылета;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "- если изменением режима работы двигателя (двигателей) не удается снизить уровень вибрации, при котором гаснет красное светосигнальное табло опасной вибрации и не уменьшается величина виброскорости, двигатель выключить и действовать в соответствии с  [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color] "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FFA500]ВНИМАНИЕ.[/color]\n 1. В СЛУЧАЕ ЗАГОРАНИЯ КРАСНОГО СВЕТОСИГНАЛЬНОГО ТАБЛО [color=#FF0000]ЛЕВ. (ПРАВ.) ДВИГ. ВИБРАЦИЯ ОПАСНАЯ[/color] С ОДНОВРЕМЕННЫМ ИЗМЕНЕНИЕМ ХОТЯ БЫ ОДНОГО ИЗ ПАРАМЕТРОВ РАБОТЫ ДВИГАТЕЛЯ"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "(ПАДЕНИЕ ЧАСТОТЫ ВРАЩЕНИЯ РОТОРА ТУРБОКОМПРЕССОРА, ДАВЛЕНИЯ МАСЛА, ПОВЫШЕНИЕ ТЕМПЕРАТУРЫ ГАЗА, РОСТ ТЕМПЕРАТУРЫ МАСЛА) ДВИГАТЕЛЬ ВЫКЛЮЧИТЬ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "2. В ПОЛЕТЕ ДОПУСКАЕТСЯ КРАТКОВРЕМЕННОЕ МИГАНИЕ КРАСНОГО СВЕТОСИГНАЛЬНОГО ТАБЛО, В ЭТОМ СЛУЧАЕ ПОЛЁТ РАЗРЕШАЕТСЯ ПРОДОЛЖАТЬ, ЕСЛИ ПРИ ЭТОМ ЭКСПЛУАТАЦИОННЫЕ ПАРАМЕТРЫ РАБОТЫ ДВИГАТЕЛЯ ПО П.1 ВНИМАНИЯ НЕ ВЫХОДЯТ ЗА ДОПУСТИМЫЕ ЗНАЧЕНИЯ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "3. ДЕЛЕНИЕ ШКАЛЫ УРОВНЯ ВИБРАЦИЙ НА ПОКАЗЫВАЮЩИХ ПРИБОРАХ УК-68В В % СООТВЕТСТВУЮТ ДЕЛЕНИЯМ ШКАЛЫ В ММ/С."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_1dv"; root.manager.transition.direction="left"
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

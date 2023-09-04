@@ -1,0 +1,90 @@
+<mi8QI_ogr>:
+    name: "Mi8QI_ogr"
+    MDScreen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "5dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                MDRectangleFlatButton:
+                    text: "МИНИМУМЫ ДЛЯ ВЗЛЕТОВ И ПОСАДОК"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_min"
+
+                MDRectangleFlatButton:
+                    text: "МАССА И ЦЕНТРОВКА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_mas"
+
+                MDRectangleFlatButton:
+                    text: "ОГРАНИЧЕНИЯ ПО ВЕТРУ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_veter"
+
+                MDRectangleFlatButton:
+                    text: "СКОРОСТИ И ВЫСОТЫ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_skor"
+
+                MDRectangleFlatButton:
+                    text: "ЧАСТОТА ВРАЩЕНИЯ НВ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_nv"
+
+                MDRectangleFlatButton:
+                    text: "МАНЕВРЕННОСТЬ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_man"
+
+                MDRectangleFlatButton:
+                    text: "РАЗНЫЕ ОГРАНИЧЕНИЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_ogr1"
+
+                MDRectangleFlatButton:
+                    text: "РАЗМЕРЫ ПЛОЩАДОК"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8QI_plosh"
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tQI"; root.manager.transition.direction="left"

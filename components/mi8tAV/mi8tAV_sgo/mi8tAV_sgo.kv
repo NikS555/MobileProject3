@@ -1,0 +1,122 @@
+<mi8tAV_sgo>:
+    name: "Mi8tAV_sgo"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ ГЕНЕРАТОРА ПОСТОЯННОГО ТОКА"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- загорание желтого светосигнального табло [color=#FFFF00]ВКЛЮЧИ ПРЕ0БРА30В. 115В[/color];\n- падение стрелки амперметра переменного тока до нуля."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При отказе генератора переменного тока СГО-ЗОУ отключается питание обогрева лопастей несущего и рулевого винтов, обогрев стекол кабины."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе генератора электросхема обеспечивает автоматическое включение резервного преобразователя ПО-750 независимо от положения переключателя ГЕНЕРАТОР - ПРЕОБРАЗОВАТЕЛЬ 115 В."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Включение преобразователя сигнализируется светосигнальным табло [color=#FFFF00]РАБОТАЕТ ПРЕОБРАЗОВАТЕЛЬ 115 В[/color]. Тем не менее для более надежной работы преобразователя необходимо переключатель ГЕНЕРАТОР -ПРЕОБРАЗОВАТЕЛЬ 115 В установить в положение ПРЕОБРАЗОВАТЕЛЬ"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При этом гаснет светосигнальное табло ВКЛЮЧИ ПРЕ0БРА30В. 115 В.\n Преобразователь обеспечивает питание всех потребителей электроэнергии 115 В 400Гц, за исключением обогрева лопастей НВ, РВ и стекол кабины экипажа."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Дальнейшее выполнение задания производится по усмотрению командира вертолета в зависимости от условий, в которых выполняется полет."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

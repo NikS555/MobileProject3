@@ -1,0 +1,369 @@
+<mi8tAV>:
+    name: "Mi8tAV"
+    MDScreen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "5dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                MDLabel:
+                    text: "ПОДБИРАЙ ПЛОЩАДКУ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В ДВИГАТЕЛЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В ДВИГАТЕЛЕ НА ЗЕМЛЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_zemlya"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В РЕДУКТОРЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_VR"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В РЕДУКТОРЕ НА ЗЕМЛЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_VR_zemlya"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В ОТСЕКЕ КО-50"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_KO"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В ОТСЕКЕ КО-50 НА ЗЕМЛЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_KO_zemlya"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В КАБИНЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_cab"
+
+                MDRectangleFlatButton:
+                    text: "ПОЖАР В КАБИНЕ НА ЗЕМЛЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pojar_cab_zemlya"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 1 ДВИГАТЕЛЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_1dv"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 1 ДВИГ. НА МАЛОЙ ВЫСОТЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_1dv_malH"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 2х ДВИГАТЕЛЕЙ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_2dv"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ ОСНОВНОЙ ГИДРОСИСТЕМЫ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ogs"
+
+                MDRectangleFlatButton:
+                    text: "ПОЛНЫЙ ОТКАЗ ПУТЕВОГО УПРАВЛЕНИЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pu"
+
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗЫ СИСТЕМ И АГРЕГАТОВ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_system"
+
+                MDRectangleFlatButton:
+                    text: "СТРУЖКА В ДВИГАТЕЛЕ, РЕДУКТОРЕ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_strujka"
+
+                MDRectangleFlatButton:
+                    text: "ОПАСНАЯ ВИБРАЦИЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_vibro"
+
+                MDRectangleFlatButton:
+                    text: "ПОВЫШЕНИЕ Тм В ХР, ПР"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_XR_PR"
+
+                MDRectangleFlatButton:
+                    text: "УМЕНЬШЕНИЕ Рм И РОСТ Тм ДВИГАТЕЛЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_maslo_dv"
+
+                MDRectangleFlatButton:
+                    text: "ЗАКУПОРКА ДРЕНАЖА ТОП. СИСТЕМЫ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "red"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_drenaj"
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ В СЛОЖНОЙ ОБСТАНОВКЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+                    size_hint_y: None
+
+                MDRectangleFlatButton:
+                    text: "АВАРИЙНЫЙ СБРОС ГРУЗА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_sbros"
+
+                MDRectangleFlatButton:
+                    text: "АВАРИЙНАЯ ПОСАДКА НА СУШУ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_susha"
+
+                MDRectangleFlatButton:
+                    text: "АВАРИЙНАЯ ПОСАДКА НА ВОДУ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "orange"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_voda"
+
+
+                MDLabel:
+                    text: "СЛЕДУЙ НА АЭРОДРОМ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "yellow"
+                    size_hint_y: None
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ ПУТЕВОГО УПРАВЛЕНИЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_pu2"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ САР"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_SAR"
+
+                MDRectangleFlatButton:
+                    text: "ЗЕМНОЙ РЕЗОНАНС"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ZEM"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 2х НАСОСОВ РАСХ.БАКА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_2nRB"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 2х ГЕНЕРАТОРОВ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_2gen"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ ГЕНЕРАТОРА ПЕРЕМЕН.ТОКА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_sgo"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ АВИАГОРИЗОНТА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_agb"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 2х УКАЗАТЕЛЕЙ СКОРОСТИ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_2us"
+
+                MDRectangleFlatButton:
+                    text: "АВАРИЙНЫЙ ОСТАТОК 270л"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_270"
+
+                MDRectangleFlatButton:
+                    text: "РЕЖИМ ВИХРЕВОГО КОЛЬЦА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_vk"
+
+                MDRectangleFlatButton:
+                    text: "ПОВЫШЕННАЯ ВИБРАЦИЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "yellow"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_Pvibro"
+
+                MDLabel:
+                    text: "ПРОДОЛЖАЙ ПОЛЕТ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "lawngreen"
+                    size_hint_y: None
+
+                MDRectangleFlatButton:
+                    text: "НИЗКОЧАСТОТНЫЕ КОЛЕБАНИЯ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_NHV"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 1 НАСОСА РАСХ.БАКА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_1nRB"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 1 ГЕНЕРАТОРА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_1gen"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ 1 УКАЗАТЕЛЯ СКОРОСТИ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_1us"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ РАДИОСВЯЗИ"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_RS"
+
+                MDRectangleFlatButton:
+                    text: "ОТКАЗ ПОПЛАВКОВОГО КЛАПАНА"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_popKlap"
+
+                MDRectangleFlatButton:
+                    text: "MEL"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_MEL"
+
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"

@@ -1,0 +1,52 @@
+<mi8tAV_XR_PR>:
+    name: "Mi8tAV_XR_PR"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОВЫШЕНИЕ ТЕМПЕРАТУРЫ МАСЛА В ПРОМЕЖУТОЧНОМ ИЛИ ХВОСТОВОМ РЕДУКТОРЕ ВЫШЕ МАКСИМАЛЬНО ДОПУСТИМОЙ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При повышении температуры масла в промежуточном или хвостовом редукторе выше максимально допустимой выполнение задания прекратить, перейти на снижение на скорости 120...140 км/ч и произвести посадку на подобранную площадку."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

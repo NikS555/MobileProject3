@@ -1,0 +1,62 @@
+
+<mainScreen>:
+    name: "mainScreen"
+    MDScreen:
+        FloatLayout:
+            MDCard:
+                orientation: "vertical"
+                padding: 0, 0, 0 , "36dp"
+                size_hint: .6, 0.4
+                pos_hint: {"center_x": .5, "center_y": 0.75}
+                elevation: 4
+                shadow_radius: 6
+                shadow_offset: 0, 2
+                md_bg_color: "dimgray"
+
+                FitImage:
+                    source: "data/images/mi8t.png"
+
+                FloatLayout:
+                    MDRaisedButton:
+                        text: "АВАРИЙНЫЕ КАРТЫ"
+                        font_size: "10dp"
+                        pos_hint: {"center_x": .5, "center_y": 0.6}
+                        md_bg_color: "red"
+                        on_release: root.manager.current ="Mi8tAV"
+
+
+                    MDRaisedButton:
+                        text: "ЭКСПЛУАТАЦИЯ    АТ"
+                        font_size: "10dp"
+                        pos_hint: {"center_x": .5, "center_y": 0.05}
+                        md_bg_color: "olivedrab"
+                        on_release: root.manager.current ="Mi8tQI"
+
+        MDCard:
+            orientation: "vertical"
+            padding: 0, 0, 0 , "36dp"
+            size_hint: .6, 0.4
+            pos_hint: {"center_x": .5, "center_y": 0.25}
+            elevation: 4
+            shadow_radius: 6
+            shadow_offset: 0, 2
+            md_bg_color: "dimgray"
+
+            FitImage:
+                source: "data/images/mi8amt.jpg"
+
+            FloatLayout:
+                MDRaisedButton:
+                    text: "АВАРИЙНЫЕ КАРТЫ"
+                    font_size: "10dp"
+                    pos_hint: {"center_x": .5, "center_y": 0.6}
+                    md_bg_color: "red"
+                    on_release: root.manager.current ="Mi8amtAV"
+
+                MDRaisedButton:
+                    text: "ЭКСПЛУАТАЦИЯ    АТ"
+                    font_size: "10dp"
+                    pos_hint: {"center_x": .5, "center_y": 0.05}
+                    md_bg_color: "olivedrab"
+                    on_release: root.manager.current ="Mi8amtQI"
+

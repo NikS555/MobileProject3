@@ -1,0 +1,91 @@
+<mi8tAV_drenaj>:
+    name: "Mi8tAV_drenaj"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ЗАКУПОРКА ДРЕНАЖА ТОПЛИВНОЙ СИСТЕМЫ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- мигание или погасание светосигнальных табло одного или обоих перекачивающих насосов [color=#FFFF00]ЛЕВОГО БАКА, ПРАВОГО БАКА[/color];\n - мигание или устойчивое горение светосигнального табло [color=#FF0000]ОСТАЛОСЬ 270 Л[/color] (при остатке топлива более 270 л в расходном баке) при наличии топлива в подвесных баках;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- отсутствие выработки или уменьшение расхода топлива из подвесных и дополнительных баков;\n - любые различные варианты сочетаний указанных выше признаков."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- немедленно произвести посадку на площадку, подобранную с воздуха;\n - быть готовым к одновременному самовыключению двух двигателей и выполнению действий по переводу вертолета на режим самовращения несущего винта и выполнению посадки в соответствии с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color] "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_2dv"; root.manager.transition.direction="left"
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

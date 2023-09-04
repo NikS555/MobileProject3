@@ -1,0 +1,148 @@
+<mi8tAV_strujka>:
+    name: "Mi8tAV_strujka"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ЗАГОРАНИЕ СВЕТОСИГНАЛЬНОГО ТАБЛО СТРУЖКА ЛЕВ. ДВИГ., СТРУЖКА ПР. ДВИГ., СТРУЖКА ГЛ. РЕДУК."
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Мигание или устойчивое горение табло [color=#FFFF00]СТРУЖКА ЛЕВ. ДВИГ.[/color], [color=#FFFF00]СТРУЖКА ПР. ДВИГ.[/color] "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- проконтролировать значения давления и температуры масла в двигателе;\n - если при этом не наблюдается рост температуры или уменьшение давления масла в двигателе, выполнение задания  прекратить и произвести посадку на площадку, подобранную с воздуха;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "- если при загорании табло отмечается рост температуры или уменьшение давления масла, двигатель выключить и произвести посадку согласно  [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_1dv"; root.manager.transition.direction="left"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Мигание или устойчивое горение табло [color=#FFFF00]СТРУЖКА ГЛ. РЕДУК.[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+
+                Label:
+                    text: "- проконтролировать значения давления и температуры масла в главном редукторе;\n - если загорание (мигание) табло не сопровождается ростом температуры или уменьшением давления масла в главном редукторе, выполнение задания прекратить и следовать до ближайшего аэродрома, повысив контроль за параметрами работы главного редуктора;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- если при загорании (мигании) табло отмечается рост температуры или уменьшение давления масла в главном редукторе, немедленно перейти на снижение с малой мощностью двигателей на скорости 120...140 км/ч и произвести посадку на выбранную площадку, по возможности с пробегом."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

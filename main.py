@@ -561,6 +561,7 @@ class MyApp(MDApp):
         sm.add_widget(mi8QI_mas(name="Mi8QI_mas"))
         sm.add_widget(mi8QI_veter(name="Mi8QI_veter"))
         sm.add_widget(mi8QI_skor(name="Mi8QI_skor"))
+        sm.add_widget(mi8QI_nv(name="Mi8QI_nv"))
         sm.add_widget(mi8QI_man(name="Mi8QI_man"))
         sm.add_widget(mi8QI_ogr1(name="Mi8QI_ogr1"))
         sm.add_widget(mi8QI_plosh(name="Mi8QI_plosh"))

@@ -1,0 +1,100 @@
+<mi8tAV_pojar_cab>:
+    name: "Mi8tAV_pojar_cab"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОЖАР В КАБИНЕ ВЕРТОЛЕТА В ПОЛЕТЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                Label:
+                    text: "[color=#FFA500]ВНИМАНИЕ.[/color] ПРИ ОБНАРУЖЕНИИ ПОЖАРА В КАБИНЕ ВЕРТОЛЕТА НЕОБХОДИМО ПЕРЕВЕСТИ ВЕРТОЛЕТ В РЕЖИМ АВАРИЙНОГО СНИЖЕНИЯ ,ВЫКЛЮЧИТЬ НЕНУЖНЫЕ ДЛЯ ЗАВЕРШЕНИЯ ПОЛЕТА ПОТРЕБИТЕЛИ ЭЛЕКТРОЭНЕРГИИ, ПРОИЗВЕСТИ ПОСАДКУ И ОБЕСТОЧИТЬ ВЕРТОЛЕТ"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 7
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При ВИЗУАЛЬНОМ обнаружении пожара в кабине вертолета "
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "В этом случае бортмеханик и второй пилот по команде командира вертолета должны:\n - приступить к ликвидации пожара с помощью ручных огнетушителей;\n - не допускать перемещения пассажиров и скопления их в задней и передней частях кабины, так как это приведет к недопустимой центровке вертолета;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при загорании электропроводки бортмеханик должен по команде командира вертолета обесточить сеть, в которой возник пожар, а если невозможно определить, в какой сети загорелась электропроводка, весь вертолет."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color] ПРИ ПОЛНОСТЬЮ ОБЕСТОЧЕННОМ ВЕРТОЛЕТЕ ПОПОЛНЯТЬ РАСХОДНЫЙ БАК ИЗ ОСНОВНЫХ БАКОВ НЕВОЗМОЖНО, В ЭТОМ СЛУЧАЕ ДЛЯ РАСХОДОВАНИЯ ОСТАЕТСЯ ТОЛЬКО 350 Л ТОПЛИВА, НАХОДЯЩЕГОСЯ В РАСХОДНОМ БАКЕ. ПРИ ЭТОМ ВОЗМОЖНО ВЫКЛЮЧЕНИЕ ОДНОГО ИЛИ ОБОИХ ДВИГАТЕЛЕЙ ИЗ-ЗА ОТКЛЮЧЕНИЯ ОБОИХ ПОДКАЧИВАЮЩИХ НАСОСОВ РАСХОДНОГО БАКА."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

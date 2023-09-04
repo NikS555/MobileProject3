@@ -1,0 +1,107 @@
+<mi8tAV_2us>:
+    name: "Mi8tAV_2us"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ УКАЗАТЕЛЯ СКОРОСТИ УС-35К"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- несоответствие показаний режиму работы двигателей (общему шагу и частоте вращения трубокомпрессоров);\n- неустойчивое положение стрелки указателя;\n- сравнение с показаниями других приборов (второго указателя скорости, вариометра, авиагоризонта)."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- необходимо прекратить выполнение задания;\n- установить режим полета, требуемый для выдерживания скорости горизонтального полета, по величине общего шага несущего винта и частоте вращения турбокомпрессоров двигателей;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- пилотировать вертолет по дублирующим приборам (авиагоризонту, вариометру);\n- произвести посадку на выбранной площадке."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При отказе всех анероидно-мембранных приборов (указателей скорости, вариометров и высотомеров) из-за выхода из строя обоих ПВД необходимо снять дюрит с трубопровода статической системы правого ПВД (за правой приборной доской)."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При этом статическое давление в приборы будет подводится из кабины, в результате чего восстановится работоспособность вариометров и высотомеров (при положении переключателя ПВД ВСПОМ. или ОБЪЕДИНЕН.)."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

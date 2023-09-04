@@ -1,0 +1,85 @@
+<mi8tAV_SAR>:
+    name: "Mi8tAV_SAR"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ СИСТЕМЫ АВТОМАТИЧЕСКОГО ПОДДЕРЖАНИЯ ЧАСТОТЫ ВРАЩЕНИЯ НВ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- самопроизвольная раскрутка несущего винта более 98%;\n- появление ВИЛКИ в показаниях частоты вращения ТК более 2%;\n- самопроизвольное колебании частоты вращения турбокомпрессора и др."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Поворотом коррекции влево установить частоту вращения несущего винта 92...93% и поддерживать ее в этих пределах ручкой ШАГ-ГАЗ"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "При самопроизвольном уменьшении частоты вращения НВ в полете менее 92% необходимо уменьшить ОШ НВ до значения, соответствующего частоте вращения НВ 92...93%, дальнейшее выполнение задания прекратить и произвести посадку на площадку взлета или при необходимости на площадку, подобранную с воздуха."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 12
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

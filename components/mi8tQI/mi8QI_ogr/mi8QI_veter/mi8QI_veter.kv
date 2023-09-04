@@ -1,0 +1,75 @@
+<mi8QI_veter>:
+    name: "Mi8QI_veter"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                Label:
+                    text: "Максимальная скорость ветра при раскрутке,остановке несущего винта и рулении:\n- Спереди 0° - 25 м/с\n- Слева 270° - 15 м/с\n- Справа 90° - 10 м/с\n- Сзади 180° - 8 м/с"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Максимальная скорость ветра при висении, взлете, посадке и перемещениях:\n- Спереди 0° - 25 м/с\n- Слева 270° - 10 м/с\n- Справа 90° - 5 м/с\n- Сзади 180° - 5 м/с"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]Примечание.[/color]\n 1. Выполнение висений и перемещений с попутным и боковым ветром справа усложняет пилотирование вертолета и требует более плавных движений органами управления, чем выполнение аналогичных режимов со встречным и боковым ветром слева."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 12
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "2. Запуск и выключение двигателей ЗАПРЕЩАЕТСЯ при наличии вблизи вертолета на удалении менее 50 м других вертолетов (самолетов) с запущенными двигателями, а также работающих спецмашин (например, снегоочистителей), могущих повлиять на безопасность раскрутки и остановки несущего винта."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 12
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8QI_ogr"; root.manager.transition.direction="left"

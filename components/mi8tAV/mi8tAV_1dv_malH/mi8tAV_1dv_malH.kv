@@ -1,0 +1,318 @@
+<mi8tAV_1dv_malH>:
+    name: "Mi8tAV_1dv_malH"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ ОДНОГО ДВИГАТЕЛЯ НА МАЛОЙ ВЫСОТЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Отказ одного двигателя в полете сопровождается:\n - резким изменением характера шума от работы двигателей;\n - изменением углового положения вертолета (пикированием, а также разворотом и кренением вправо) с уменьшением высоты полета, вызванным уменьшением частоты вращнения несущего винта;\n - уменьшением частоты вращения турбокомпрессора, температуры газа, давления топлива и масла на входе в двигатель."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При внезапном отказе в полете одного из двигателей на малой высоте и невозможности полета без снижения (без резерва времени до перехода на посадку) командиру вертолета необходимо:"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- незначительным отклонением РШГ вниз не допускать падения частоты вращения НВ менее 89%. Отклонением левой педали и РУ парировать, при необходимости, стремление вертолета к правому развороту и уменьшению угла тангажа;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- изменением ОШ и отклонением РУ и педалей установить наивыгоднейший режим полета, обеспечивающий достижение подобранной площадки для безопасной посадки с одним работающим двигателем."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FFA500]ВНИМАНИЕ.[/color]\n ПРИ ОТКАЗЕ ДВИГАТЕЛЯ У ЗЕМЛИ НА МАЛОЙ ВЫСОТЕ И МАЛОЙ СКОРОСТИ ПРОИСХОДИТ ЗНАЧИТЕЛЬНОЕ УВЕЛИЧЕНИЕ ВЕРТИКАЛЬНОЙ СКОРОСТИ, ДЛЯ ПАРИРОВАНИЯ КОТОРОЙ ПИЛОТ МОЖЕТ ПРЕЖДЕВРЕМЕННО УВЕЛИЧИТЬ ШАГ ДО НЕДОПУСТИМОЙ ВЕЛИЧИНЫ, ПОЭТОМУ НЕОБХОДИМО УЧИТЫВАТЬ, ЧТО ТЕМП УВЕЛИЧЕНИЯ ШАГА И ЕГО МАКСИМАЛЬНАЯ ВЕЛИЧИНА ЗАВИСЯТ ОТ ВЫСОТЫ ПОЛЕТА И СКОРОСТИ ПРИБЛИЖЕНИЯ К ЗЕМЛЕ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDLabel:
+                    text: "ТЕХНИКА ВЫПОЛЕНИЯ ПОСАДКИ С КОРОТКИМ ПРОБЕГОМ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе одного двигателя в горизонтальном полете и при взлете на высотах менее 20...30м в случае невозможности продолжения полета без снижения посадка выполняется прямо перед собой или с отворотом в сторону с гашением поступательной и вертикальной скоростей соразмерно со скоростью приближения к земле."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При этом в случае отказа двигателя на скоростях менее 60 км/ч на высотах более 15...20м целесообразнее сразу же после парирования разбалансировочных моментов и незначительного сбора шага отдачей ручки от  себя увеличить скорость до 60...80км/ч, т.е. перейти на более выгодную скорость, обеспечивающую лучшие аэродинамические условия посадки с подрывом."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При отказе одного двигателя на взлете на высотах  более 30-50м в условиях, обеспечивающих однодвигательный полет с положительной скороподъемностью или незначительной скоростью снижения, возможен полет по кругу с посадкой на площадку взлета."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Пилотирование вертолета при этом необходимо производить в соответствии с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_1dv"; root.manager.transition.direction="left"
+
+                Label:
+                    text: "При отказе двигателя на взлете в условиях фактической видимости ниже минимума для посадки (взлетная масса вертолета менее определенной из номограммы РЛЭ, рис. 6.6.1, на 1,3 т):"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на высоте менее 20м взлет прекратить и произвести посадку на летную полосу с гашением поступательной и вертикальной скоростей соразмерно со скоростью приближения к земле;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на высоте 20 м и более выполнить продолженный взлет. Для выполнения продолженного взлета после отказа двигателя и устранения разбалансировки вертолет перевести в разгон скорости до 120 км/ч при взлетном режиме работы двигателя. Набрать безопасную высоту и выполнить полет на запасной аэродром (вертодром), минимум которого не хуже минимума KBС для посадки на нем."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если отказ двигателя происходит [u]НА ВЫСОТАХ МЕНЕЕ 5м[/u], то действия пилота сводятся к парированию раэбалансировочных моментов педалями и РУ и к увеличению ОШ. Увеличение ОШ необходимо производить с исходного практически сразу и соразмерно скорости приближения к земле."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если отказ двигателя происходит [u]НА ВЫСОТАХ БОЛЕЕ 5м[/u], то после парирования раэбалансировочных моментов необходимо незначительно уменьшить ОШ для замедления темпа падения частоты вращения НВ и отклонением РУ придать вертолету незначительное поступательное движение вперед для создания более выгодных аэродинамических условий посадки с подрывом."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Приземлять вертолет на основные колеса шасси необходимо строго вертикально, удерживая его от боковых перемещений РУ."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При выполнении вынужденной посадки на лес необходимо, по возможности, выбрать для посадки наиболее ровный участок леса с расстоянием между стволами деревьев не более 10-15 м, избегая отдельно стоящих больших деревьев. Снижение выполняется в соответствий с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Уменьшение поступательной и вертикальной скоростей необходимо начинать с H=40-50м от уровня верхушек деревьев отклонением РУ на себя и плавным увеличением ОШ так, чтобы к моменту касания колесами шасси верхушек деревьев мощность двигателя была взлетной, а поступательная скорость не более 10-15 км/ч."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "При этом перед касанием деревьев, для избежания лобового удара, следует ПРИДАТЬ вертолету положение НА КАБРИРОВАНИЕ и ВЫКЛЮЧИТЬ РАБОТАЮЩИЙ ДВИГАТЕЛЬ краном останова."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Произвести БОЛЕЕ ЭНЕРГИЧНОЕ УВЕЛИЧЕНИЕ ОШ в момент касания фюзеляжем верхушек деревьев, что даст возможность не допустить значительных вертикальных скоростей снижения к моменту начала касания деревьев несущим винтом."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "При посадке на лес высотой менее 4-5 м за поверхность приземления принимать землю."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_1dv"; root.manager.transition.direction="left"
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

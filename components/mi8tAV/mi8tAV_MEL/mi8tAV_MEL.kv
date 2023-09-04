@@ -1,0 +1,328 @@
+<mi8tAV_MEL>:
+    name: "Mi8tAV_MEL"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "УСЛОВИЯ ПРИМЕНЕНИЯ ПЕРЕЧНЯ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+
+                Label:
+                    text: "В перечне приводятся допустимые отказы и неисправности, с которыми разрешается вылет до базового аэродрома."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Перечнь применяется только в том случае, если ремонт, замену откаэавщего оборудования, устранение неисправностей или повреждения нельзя произвести на небазовом аэродроме ко времени выполнения задания на полет."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Неустраненные отказы, неисправности и повреждения, с которыми разрешается вылет вертолета, должны указываться в бортжурнале с четкой записью об отказе или неисправности, выполненных работах по их устранению и принятом решении."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Все отказы, неисправности и повреждения вертолета, с которыми разрешается полет, должны быть устранены после возвращения вертолета на базовый аэродром."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если в  перечне Наименование агрегатов, проявление отказа не указаны признаки неисправности, считать агрегат полностью отказавшим."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ОБЯЗАННОСТИ КОМАНДИРА ВЕРТОЛЕТА"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "green"
+
+                Label:
+                    text: "Получив доклад о неисправности или повреждении, командир вертолета должен принять решение о возможности вылета без их устранения на основании данного перечня,"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "с учетом известных или прогнозируемых условий полета (метеоусловий по трассе, на аэродроме вылета и посадки, оснащения наземными средствами навигации по трассе и т.п.), а также с учетом продолжительности полета."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRectangleFlatButton:
+                    text: "Повреждение обшивки, пола кабин"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_obshivka"
+
+                MDRectangleFlatButton:
+                    text: "Растрескивание э/обогреваемого стекла"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_steklo"
+
+                MDRectangleFlatButton:
+                    text: "Электромагнитные тормоза ЭМТ-2"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_emt2"
+
+                MDRectangleFlatButton:
+                    text: "Насос ЭЦН-75 в подвесных баках"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ecn75"
+
+                MDRectangleFlatButton:
+                    text: "Топливомер, отказ измерительной части"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_toplivomer"
+
+                MDRectangleFlatButton:
+                    text: "Обогреватель КО-50"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ko50"
+
+                MDRectangleFlatButton:
+                    text: "Сигнализатор обледенения РИО-3"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_rio3"
+
+                MDRectangleFlatButton:
+                    text: "Генератор постоянного тока"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_genpost"
+
+                MDRectangleFlatButton:
+                    text: "Генератор переменного тока"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_genper"
+
+                MDRectangleFlatButton:
+                    text: "Сигнализация отказа генератора"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_siggen"
+
+                MDRectangleFlatButton:
+                    text: "Освещение кабин"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_svet"
+
+                MDRectangleFlatButton:
+                    text: "Лампы УФО, лампы красного подсвета"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_lamp"
+
+                MDRectangleFlatButton:
+                    text: "Неисправна посадочная фара"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_posfar"
+
+                MDRectangleFlatButton:
+                    text: "Неисправна рулежная фара"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_rulfar"
+
+                MDRectangleFlatButton:
+                    text: "Неисправны АНО"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ano"
+
+                MDRectangleFlatButton:
+                    text: "Проблесковые маяки"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_mayak"
+
+                MDRectangleFlatButton:
+                    text: "Указатель скорости"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_us"
+
+                MDRectangleFlatButton:
+                    text: "Барометрический высотомер"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_vd"
+
+                MDRectangleFlatButton:
+                    text: "Вариометр"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_var"
+
+                MDRectangleFlatButton:
+                    text: "Магнитный компас КИ-13"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ki13"
+
+                MDRectangleFlatButton:
+                    text: "Радиовысотомер"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_rv"
+
+                MDRectangleFlatButton:
+                    text: "УКВ радиокомпас АРК У-2"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_u2"
+
+                MDRectangleFlatButton:
+                    text: "СВ радиокомпас АРК-9 (АРК-15М)"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ark9"
+
+                MDRectangleFlatButton:
+                    text: "СПУ-7, отказ усилителя"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_spu7"
+
+                MDRectangleFlatButton:
+                    text: "УКВ радиостанция"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_ukv"
+
+                MDRectangleFlatButton:
+                    text: "КВ радиостанция"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    line_color: "lawngreen"
+                    size_hint: 1, None
+                    on_release: root.manager.current ="Mi8tAV_kv"
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

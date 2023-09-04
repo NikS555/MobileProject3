@@ -1,0 +1,147 @@
+<mi8tAV_pu2>:
+    name: "Mi8tAV_pu2"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ ПУТЕВОГО УПРАВЛЕНИЯ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "-вертолет не реагирует на отклонение педалей;\n- самопроизвольно разворачивается."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Продолжить полет до выбора площадки, пригодной для безопасной посадки вертолета с пробегом. Полет можно выполнять в диапазоне скоростей по прибору 80...180 км/ч, рекомендуемая скорость полета - 140...160 км/ч."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "Для прекращения разворота необходимо сбалансировать вертолет скольжением, развороты рекомендуется выполнять в левую сторону изменением крена.\n На предпосадочной прямой Vnp выдерживается 140...160 км/ч, скорость снижения 3...4 м/с"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FF4500]Примечания:[/color] \n 1. Заход на посадку рекомендуется выполнять с включенными каналами КРЕН и ТАНГАЖ автопилота.\n 2. Посадочную площадку рекомендуется выбирать таким образом, чтобы обеспечивалась посадка вертолета с боковым ветром справа."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "На высоте 25...30м выполняется торможение вертолета, тенденции к развороту влево парируются уменьшением ОШ НВ.\n На высоте 10...15 м для устранения скольжения вправо необходимо ЭНЕРГИЧНО уменьшить ОШ НВ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "На высоте 3...4 м следует ликвидировать крен и произвести приземление вертолета с Vпp не менее 80 км/ч"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "После приземления вертолета необходимо уменьшить общий шаг несущего винта до минимального, выключить двигатели и автопилот, при не необходимости уменьшить длину пробега следует использовать тормоза колес."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При невозможности приземления со скоростью 80 км/ч и более по условиям посадочной площадки торможение вертолета производится до меньшей скорости, шаг уменьшается на Н=10-15 м более энергично, вплоть до минимального, приземление при этом происходит с большей вертикальной скоростью."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

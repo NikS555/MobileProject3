@@ -1,0 +1,196 @@
+<mi8tAV_ogs>:
+    name: "Mi8tAV_ogs"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ ОСНОВНОЙ ГИДРОСИСТЕМЫ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе основной гидросистемы (при падении в ней давления) гидроусилители автоматически питаются от дублирующей гидросистемы , при этом загорается или мигает светосигнальное табло [color=#FF0000]ДУБЛИРУЮЩАЯ ГИДРОСИСТЕМА ВКЛЮЧЕНА[/color] и быстро нарастает давление в дублирующей системе до (45+3)-(65_+8 ) кгс/см."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе основной гидросистемы выключатель ОСНОВНАЯ ГИДРОСИСТЕМА необходимо поставить в положение ВЫКЛЮЧЕНО, выполнение задания прекратить и произвести посадку на выбранную площадку."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color]\n [u]ЗАПРЕЩАЕТСЯ:[/u] 1. ПОВТОРНО ВКЛЮЧАТЬ ВЫКЛЮЧАТЕЛЬ ОСНОВНАЯ ГИДРОСИСТЕМА.\n 2. НАЖИМАТЬ НА КНОПКУ ОТКЛ.ДУБЛ.СИСТ. НА СРЕДНЕМ ЭЛЕКТРОПУЛЬТЕ ПИЛОТОВ НА ВЕРТОЛЕТАХ, ИМЕЮЩИХ УКАЗАННУЮ КНОПКУ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "[color=#FFA500]Примечание.[/color]\n При переходе на дублирующую гидросистему автопилот АП-34Б и система расстопоривания фрикциона РШГ отключаются. В этом случае для создания оптимальных усилий, необходимых для перемещения РШГ , следует подобрать необходимую затяжку фрикциона."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ЗАКЛИНИВАНИЕ СИСТЕМ УПРАВЛЕНИЯ ПРИ ЗАЕДАНИИ ЗОЛОТНИКОВ ГИДРОУСИЛИТЕЛЕЙ, РАБОТАЮЩИХ ОТ ОСНОВНОЙ ГИДРОСИСТЕМЫ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                Label:
+                    text: "При заклинивании систем продольного, поперечного и путевого управлений или управления ОШ НВ, вызванном заеданием золотника гидроусилителей (светосигнальное табло [color=#7CFC00]ОСНОВНАЯ ГИДРОСИСТЕМА ВКЛЮЧЕНА[/color] горит и в основной системе поддерживается нормальное давление),"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "необходимо отключить автопилот, нажать на кнопку автотриммера и убедиться в отсутствии заедания в пружинных механизмах загрузки, перевести гидроусилители на питание от дублирующей гидросистемы , для чего выключатель ОСНОВНАЯ ГИДРОСИСТЕМА поставить в положение ВЫКЛ"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Светосигнальное табло [color=#7CFC00]ОСНОВНАЯ ГИДРОСИСТЕМА ВКЛЮЧЕНА[/color] гаснет и загорается светосигнальное табло [color=#FF0000]ДУБЛИРУЮЩАЯ ГИДРОСИСТЕМА ВКЛЮЧЕНА[/color]. Давление в дублирующей системе быстро нарастает до (45+3)-(65+8) кгс/см. В основной гидросистеме давление (по манометру) также сохраняется."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "После перехода на работу от дублирующей гидросистемы необходимо ВЫПОЛНЕНИЕ ЗАДАНИЕ ПРЕКРАТИТЬ И ПРОИЗВЕСТИ ПОСАДКУ НА ВЫБРАННУЮ ПЛОЩАДКУ."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ВОЗНИКНОВЕНИЕ В ПОЛЕТЕ АВТОКОЛЕБАНИЙ ЗОЛОТНИКА ГИДРОУСИЛИТЕЛЯ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+
+                Label:
+                    text: "При возникновении в полете автоколебаний золотника гидроусилителя, которые воспринимаются как высокочастотная вибрация (зуд) на ручке управления, необходимо отключить автопилот АП-34Б, ВЫПОЛНЕНИЕ ЗАДАНИЕ ПРЕКРАТИТЬ И ПРОИЗВЕСТИ ПОСАДКУ НА ВЫБРАННУЮ ПЛОЩАДКУ."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "РЕЗКОЕ УВЕЛИЧЕНИЕ ЧАСТОТЫ ОТКЛОНЕНИЯ СТРЕЛКИ УКАЗАТЕЛЯ МАНОМЕТРА ОСНОВНОЙ ГИДРОСИСТЕМЫ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                Label:
+                    text: "При резком увеличении частоты отклонения стрелки указателя манометра основной гидросистемы, что свидетельствует о разгерметизации газовых полостей обоих гидроаккумуляторов, выключатель ОСНОВНАЯ ГИДРОСИСТЕМА установить в положение ВЫКЛ, ВЫПОЛНЕНИЕ ЗАДАНИЕ ПРЕКРАТИТЬ И ПРОИЗВЕСТИ ПОСАДКУ НА ВЫБРАННУЮ ПЛОЩАДКУ."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

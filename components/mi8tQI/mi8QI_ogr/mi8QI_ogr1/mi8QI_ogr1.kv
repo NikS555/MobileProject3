@@ -1,0 +1,101 @@
+<mi8QI_ogr1>:
+    name: "Mi8QI_ogr1"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+
+                Label:
+                    text: "В связи с недостаточной эффективностью противообледенительной системы лопастей несущего винта полеты вертолета в условиях обледенения при температуре окружающего воздуха [color=#87CEFA]ниже минус 12°с[/color] [color=#FF0000]ЗАПРЕЩАЕТСЯ[/color]."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При случайном попадании в зону обледенения при температуре окружающего воздуха [color=#87CEFA]ниже минус 12°с[/color] необходимо принять меры к немедленному выходу из этой зоны."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Снижение вертолета при выполнении полета в условиях возможного обледенения производить на режиме работы двигателей [color=#FFA500]не ниже 85%[/color] частоты вращения роторов турбокомпрессоров."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Учитывая недостаточную устойчивость работы двигателей ТВ2-117А при попадании в воздухозаборники значительного количества снега и воды и возможное их самовыключение в полете в этих условиях, вход в ливневые осадки (снег, дождь) при видимости менее 2000 м, в интервале температур воздуха от +5 до -5°С [color=#FF0000]ЗАПРЕЩАЕТСЯ[/color]. "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "При непреднамеренном попадании в указанные условия принять меры для выхода из этой зоны вплоть до выполнения посадки на подобранную с воздуха площадку, избегая резких изменений режимов работы двигателей и резких эволюции вертолета."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Полеты с пылезащитным устройством двигателей (ПЗУ) в условиях возможного обледенения [color=#FF0000]ЗАПРЕЩАЕТСЯ[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8QI_ogr"; root.manager.transition.direction="left"

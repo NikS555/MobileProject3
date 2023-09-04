@@ -1,0 +1,97 @@
+<mi8tAV_ZEM>:
+    name: "Mi8tAV_ZEM"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ЗЕМНОЙ РЕЗОНАНС"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Быстро нарастающие колебания вертолета (при опробовании двигателей)"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Энергично переместить ручку общего шага в нижнее положение и одновременно повернуть до упора влево рукоятку коррекции газа."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "При возникновении усиливающихся колебаний на пробеге после посадки, при взлете и рулении поступательную скорость вертолета необходимо уменьшить отклонением ручки управления на себя (до положения, близкого к нейтральному) с использованием тормозов колес."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 12
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]ПРЕДОСТЕРЕЖЕНИЕ.[/color]\n ЕСЛИ В УКАЗАННЫХ СЛУЧАЯХ КОЛЕБАНИЯ ВЕРТОЛЕТА НЕ ПРЕКРАТЯТСЯ, НЕОБХОДИМО ВЫКЛЮЧИТЬ ДВИГАТЕЛИ.\n ПЫТАТЬСЯ УСТРАНИТЬ ЗЕМНОЙ РЕЗОНАНС ОТРЫВОМ ВЕРТОЛЕТА ОТ ЗЕМЛИ [color=#FF0000]ЗАПРЕЩАЕТСЯ[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

@@ -1,0 +1,332 @@
+<mi8tAV_1dv>:
+    name: "Mi8tAV_1dv"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ ОДНОГО ДВИГАТЕЛЯ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Отказ одного двигателя в полете сопровождается:\n - резким изменением характера шума от работы двигателей;\n - изменением углового положения вертолета (пикированием, а также разворотом и кренением вправо) с уменьшением высоты полета, вызванным уменьшением частоты вращнения несущего винта;\n - уменьшением частоты вращения турбокомпрессора, температуры газа, давления топлива и масла на входе в двигатель."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При внезапном отказе в полете одного из двигателей на скорости и с запасом высоты (с резервом времени до перехода на посадку) командиру вертолета необходимо:"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " - при Vnp более 120 км/ч взятием ручки циклического шага на себя перейти на торможение вертолета с интенсивностью, обеспечивающей выход на полет Vnp=120...130 км/ч без потери высоты или с набором высоты; отклонением левой педали вперед парировать стремление вертолета к развороту вправо;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " - при Vnp менее 120 км/ч незначительным отклонением РШГ вниз не допускать падение частоты вращения несущего винта менее 89%, а отклонением левой педали вперед и ручки управления на себя и влево парировать стремление вертолета к правому развороту и уменьшению угла тангажа;"
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "\n - определить по показаниям приборов, какой из двигателей отказал, и выключить его, закрыв соответствующий кран останова;\n - перевести РРУД работающего двигателя в крайнее верхнее положение;"
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " - закрыть перекрывной кран топлива остановленного двигателя или дать команду бортмеханику закрыть перекрывной кран топлива левого (правого) двигателя;\n - установить изменением величины РШГ взлетный режим работающему двигателю при частоте вращения НВ 92...93 %;"
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " - после стабилизации режима полета изменением РШГ установить режим, соответствующий                           Vnp=120...130 км/ч, уменьшив по возможности режим работы двигателя;"
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 20
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: " - произвести вынужденную посадку на ближайшем аэродроме (вертодроме) или на площадке, подобранной с воздуха и пригодной для посадки с коротким пробегом."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 20
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color]\n 1. ЗАПУСК В ПОЛЕТЕ ОТКАЗАВШЕГО ДВИГАТЕЛЯ ЗАПРЕЩАЕТСЯ, КРОМЕ СЛУЧАЕВ САМОВЫКЛЮЧЕНИЯ ДВИГАТЕЛЯ (ДВИГАТЕЛЕЙ) ПРИ ПОЛЕТЕ  В УСЛОВИЯХ ОБЛЕДЕНЕНИЯ, СИЛЬНОГО СНЕГОПАДА И ДОЖДЯ,"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "В ЭТИХ СЛУЧАЯХ (ЕСЛИ САМОВЫКЛЮЧЕНИЕ ДВИГАТЕЛЯ В ПОЛЕТЕ СОПРОВОЖДАЛОСЬ ЛЕГКИМ ХЛОПКОМ В РАЙОНЕ СИЛОВОЙ УСТАНОВКИ БЕЗ ПОВЫШЕНИЯ ТЕМПЕРАТУРЫ ГАЗА ПЕРЕД ТУРБИНОЙ ВЫШЕ ДОПУСТИМОЙ И БЕЗ ПОСТОРОННЕГО МЕТАЛЛИЧЕСКОГО ЗВУКА) "
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "РАЗРЕШАЕТСЯ ПРОИЗВЕСТИ ЗАПУСК ДВИГАТЕЛЯ В ПОЛЕТЕ, ДЛЯ ЭТОГО НЕОБХОДИМО ОПРЕДЕЛИТЬ ПО ПОКАЗАНИЯМ ПРИБОРОВ, КАКОЙ ИЗ ДВИГАТЕЛЕЙ ВЫКЛЮЧИЛСЯ, ЗАКРЫТЬ СООТВЕТСТВУЮЩИЙ КРАН ОСТАНОВА, А РРУД ВЫКЛЮЧЕННОГО ДВИГАТЕЛЯ ПЕРЕВЕСТИ НА НИЖНИЙ УПОР И ПРОИЗВЕСТИ ЗАПУСК ДВИГАТЕЛЯ. "
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "2. ПРИ НЕВОЗМОЖНОСТИ БЕЗОПАСНОГО ПРОДОЛЖЕНИЯ ПОЛЕТА НА НОМИНАЛЬНОМ РЕЖИМЕ РАБОТЫ ОДНОГО ДВИГАТЕЛЯ РАЗРЕШАЕТСЯ ИСПОЛЬЗОВАТЬ ВЗЛЕТНЫЙ РЕЖИМ РАБОТЫ ДВИГАТЕЛЯ ДО ВЫПОЛНЕНИЯ ПОСАДКИ."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "3. ВРЕМЯ НЕПРЕРЫВНОЙ РАБОТЫ ДВИГАТЕЛЯ НА ВЗЛЕТНОМ РЕЖИМЕ НЕ БОЛЕЕ 6 МИН, ДОПУСКАЕТСЯ НАРАБОТКА ДО 60 МИН, ПОСЛЕ ЧЕГО ДВИГАТЕЛЬ И ГЛАВНЫЙ РЕДУКТОР ПОДЛЕЖАТ СНЯТИЮ"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "4. ПРИ НЕВОЗМОЖНОСТИ БЕЗОПАСНОГО ПРОДОЛЖЕНИЯ ПОЛЕТА С ОДНИМ РАБОТАЮЩИМ ДВИГАТЕЛЕМ ПРИ ТЕМПЕРАТУРЕ ОКРУЖАЮЩЕГО ВОЗДУХА +5 С И ВЫШЕ РАЗРЕШАЕТСЯ ОТКЛЮЧИТЬ РЕГУЛЯТОР ТЕМПЕРАТУРЫ ГАЗОВ УРТ-27 РАБОТАЮЩЕГО ДВИГАТЕЛЯ АЗСом ОГРАНИЧ. ТЕМПЕР. ДВИГАТ., РАСПОЛОЖЕННЫМ НА ЛЕВОЙ ПАНЕЛИ АЗС В КАБИНЕ ЭКИПАЖА."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "ДОПУСТИМОЕ ВРЕМЯ ОДНОРАЗОВОЙ НЕПРЕРЫВНОЙ РАБОТЫ ДВИГАТЕЛЯ ПРИ ОТКЛЮЧЕНИИ УРТ-27  - НЕ БОЛЕЕ 30 МИН. МАКСИМАЛЬНО ДОПУСТИМАЯ ТЕМПЕРАТУРА ГАЗОВ НЕ ДОЛЖНА ПРЕВЫШАТЬ 925 С."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ТЕХНИКА ВЫПОЛЕНИЯ ПОСАДКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "- снижение на выбранную площадку следует производить на скорости 100...120 км/ч, развороты выполнять с углом крена не более 15°"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- снижение, начиная с Н=100 М, выполнять на Vnр=80 км/ч при ветре у земли не более 5 м/с и на Vnp=80...120 км/ч при ветре более 5 м/с с вертикальной скоростью снижения 2...4 м/с;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на предпосадочной прямой на Н=50м выключить ПОС работающего двигателя;\n - уменьшение поступательной и вертикальной скоростей начинать с Н=40-50м с таким расчетом, чтобы на Н=10-15м мощность двигателя была взлетной, а поступательная скорость относительно земли 15-20км/ч"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Увеличение ОШ производить плавно ,не допуская падения частоты вращения НВ ниже 92%. По мере приближения к земле увеличивать ОШ более энергично с таким расчетом ,чтобы на Н= 0,5...1м он был близок к максимальному;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на Н=5...10м от земли до колес шасси РУ отдать от себя ,с тем, чтобы придать вертолету необходимый посадочный угол и избежать касания земли хвостовой опорой;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- после приземления вертолета, при поднятом вверх РШГ, для торможения вертолета на пробеге необходимо слегка взять на себя от нейтрального положения РУ, использовать тормоза колес. Длина послепосадочного пробега вертолета составляет 0-30м в штиль с посадочной массой около 12 000кг. Посадочная дистанция с Н=15м составляет при этом 115-85м."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- после остановки вертолета установить РУ в нейтральное положение, вывести коррекцию влево с одновременным плавным сбросом общего шага."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+
+
+
+
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

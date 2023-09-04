@@ -1,0 +1,200 @@
+<mi8tAV_pojar>:
+    name: "Mi8tAV_pojar"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОЖАР В ОТСЕКАХ ДВИГАТЕЛЕЙ В ПОЛЕТЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                Label:
+                    text: "[color=#FFA500]ВНИМАНИЕ.[/color] ПРИ ОБНАРУЖЕНИИ ПОЖАРА  В ОТСЕКЕ  ЛЕВОГО ИЛИ ПРАВОГО ДВИГАТЕЛЯ НЕОБХОДИМО ПЕРЕВЕСТИ ВЕРТОЛЕТ В РЕЖИМ АВАРИЙНОГО СНИЖЕНИЯ ,ВЫКЛЮЧИТЬ НЕНУЖНЫЕ ДЛЯ ЗАВЕРШЕНИЯ ПОЛЕТА ПОТРЕБИТЕЛИ ЭЛЕКТРОЭНЕРГИИ, ПРОИЗВЕСТИ ПОСАДКУ И ОБЕСТОЧИТЬ ВЕРТОЛЕТ"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 7
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При возникновении пожара в отсеке левого (правого ) двигателя на щитке системы пожаротушения должны загореться ; \n- красное светосигнальное табло \n[color=#FF0000]ПОЖАР В ОТСЕКЕ ЛЕВОГО ДВИГ[/color].\n [color=#FF0000](ПОЖАР В ОТСЕКЕ ПРАВОГО ДВИГ.)[/color];\n - желтое светосигнальное табло [color=#FFFF00]КРАН ОТКРЫТ[/color]; \n-желтое светосигнальное табло [color=#FFFF00]СРАБОТ. БАЛЛОНЫ AВТОМАТ.ОЧЕРЕДИ[/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "crimson"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При загорании светосигнального табло необходимо:\n - выключить левый (правый) двигатель краном останова; \n - закрыть перекрывной кран топлива левого (правого) двигателя;\n - выключить генератор левого (правого ) двигателя; \n - нажать кнопку ВЫК.СИГН.ПОЖАР"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если пожар ликвидирован 1-й автоматической очередью пожаротушения,то на щитке системы пожаротушения должно  погаснуть светосигнальное табло [color=#FF0000]ПОЖАР В ОТСЕКЕ ЛЕВОГО ДВИГ[/color]. [color=#FF0000](ПОЖАР В ОТСЕКЕ ПРАВОГО ДВИГ)[/color]."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "В этом случае следует:\n - убедиться визуально в ликвидации пожара;\n - поставить главный выключатель системы пожаротушения в положение ВЫКЛ, а затем в положение ВКЛ."
+                    halign: "left"
+                    markup: True
+                    text_size: 300, None
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FFA500]ПРЕДУПРЕЖДЕНИЕ.[/color] ГЛАВНЫЙ ВЫКЛЮЧАТЕЛЬ СИСТЕМЫ ПОЖАРОТУШЕНИЯ СЛЕДУЕТСТАВИТЬ В ПОЛОЖЕНИЕ ВЫКЛ. НЕ РАНЕЕ ЧЕМ ЧЕРЕЗ 20 С ПОСЛЕ СРАБАТЫВАНИЯ БАЛЛОНОВ ДЛЯ УРАВНИВАНИЯ ДАВЛЕНИЯ В ТРУБОПРОВОДЕ С АТМОСФЕРНЫМ. ПРИ НАЛИЧИИ В СИСТЕМЕ ДАВЛЕНИЯ ЭЛЕКТРОМАГНИТНЫЕКРАНЫ ПОСЛЕ ИХ ЗАКРЫТИЯ НЕ ОТКРОЮТСЯ. "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если пожар НЕ ЛИКВЕДИРОВАН 1-й АВТОМАТИЧЕСКОЙ ОЧЕРЕДЬЮ пожаротушения ВСЕ СВЕТОСИГНАЛЬНЫЕ ТАБЛО ПРОДОЛЖАЮТ ГОРЕТЬ, или пожар обнаруружен ВИЗУАЛЬНО. В этом случае следует нажать кнопку включения 2-й очереди баллонов,при этом должно загореться на щитке системы пожаротушения желтое светосигнальное табло [color=#FFFF00]СРАБОТ.БАЛЛОНЫ РУЧНОЙ ОЧЕРЕДИ[/color] "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если пожар обнаружен ВИЗУАЛЬНО или по каким-либо другим признакам,а сигнализация и 1-я очередь баллонов не сработали "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                Label:
+                    text: "В этом случае следует:\n - нажать кнопку ручного включения 1-й очереди баллонов пожаротушения. После нажатия кнопки должны загoреться желтое светосигнальное табло[color=#FFFF00] КРАН ОТКРЫТ[/color]; \nжелтое светосигнальное табло [color=#FFFF00]СРАБОТ. БАЛЛОНЫ АВТОМАТ. ОЧЕРЕДИ[/color];\n - выключить левый (правый) двигатель краном останова; \n- закрыть перекрывной кран топлива левого (правого) двигателя;"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 12
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- выключить генератор левого (правого ) двигателя; \n- проверить визуально и по другим признакам ликвидацию пожара."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Красное светосигнальное табло на пульте системы пожаротушения [color=#FF0000]ПОЖАР В ОТСЕКЕ ЛЕВОГО ДВИГ. (ПОЖАР В ОТСЕКЕ ПРАВОГО ДВИГ.)[/color]. \nТабло НЕ ГОРИТ - пожар ликвидирован;\n Табло ГОРИТ - пожар НЕ ЛИКВИДИРОВАН. "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 5
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"
+
+
+
+
+
+
+
+
+
+
+
+

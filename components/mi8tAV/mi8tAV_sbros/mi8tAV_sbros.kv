@@ -1,0 +1,117 @@
+<mi8tAV_sbros>:
+    name: "Mi8tAV_sbros"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "АВАРИЙНЫЙ СБРОС ГРУЗА С ВНЕШНЕЙ ПОДВЕСКИ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+                    size_hint_y: None
+
+                Label:
+                    text: "[u]Груз, транспортируемый на внешней подвеске, должен быть сброшен в полете в следующих случаях:[/u]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 3
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- на висении, если использована максимальная мощность двигателей, а вертолет начинает самопроизвольно снижаться, или если из-за снежного (пыльного) вихря не обеспечивается визуальный контакт с землей;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при касании фалом о землю в момент перевода вертолета в разгон или торможение перед зависанием;\n- при задевании грузом за землю в момент разгона вертолета или при торможении;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- при необходимости произвести вынужденную посадку, когда приземление с грузом невозможно;\n- при аварийной обстановке в полете (пожар, отказ двигателя и т.п.);\n - при большой поперечной раскачке груза, угрожающей безопасности полета."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[u]Под большой поперечной раскачкой груза на внешней подвеске следует понимать:[/u]\n- при маятниковой подвеске касание упорами фермы внешней подвески;\n - при тросовой подвеске касание основным тросом ограничительного кольца."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Сброс груза производится в безопасном для людей районе (зоне)\n. Сброс груза командиром вертолета производится нажатием кнопки тактического или аварийного сброса на ручке ШАГ-ГАЗ"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "На вертолетах, оборудованных кнопкой дистанционного сброса груза с внешней подвески, груз, при задевании за замлю (другие препятствия) в момент разгона или при торможении, должен быть сброшен бортоператором с одновременным докладом командиру вертолета о сбросe"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 6
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

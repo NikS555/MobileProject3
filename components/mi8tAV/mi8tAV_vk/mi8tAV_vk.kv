@@ -1,0 +1,103 @@
+<mi8tAV_vk>:
+    name: "Mi8tAV_vk"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ВИХРЕВОЕ КОЛЬЦО"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                Label:
+                    text: "Попадание вертолета в режим ВИХРЕВОГО КОЛЬЦА возможно при пилотировании вертолета на скоростях полета менее 40 км/ч с вертикальными скоростями снижения более 4 м/с."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Режим ВИХРЕВОГО КОЛЬЦА характерен:\n- самопроизвольным увеличением вертикальной скорости снижения до 14...16 м/с с появлением тряски и бросков вертолета;\n- ухудшением эффективности управления;\n- неустойчивой работой указателей скорости и вариометров."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Для вывода вертолета из режима ВИХРЕВОГО КОЛЬЦА необходимо:\n - отклонением ручки управления от себя создать угол тангажа -5... -10° для разгона поступательной скорости;"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "- после достижения поступательной скорости по прибору 60... 80 км/ч плавно увеличить общий шаг несущего винта и перевести веролет в горизонтальное полет."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "[color=#FF4500]Примечание.[/color] \n Потеря высоты при таком методе вывода вертолета из режима ВИХРЕВОГО КОЛЬЦА в горизонтальный полет составляет 20-200м и зависит от значения исходной поступательной скорости в момент входа в режим ВИХРЕВОГО КОЛЬЦА"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "времени, прошедшего с момента входа вертолета в режим ВИХРЕВОГО КОЛЬЦА до начала вывода вертолета из этого режима, и темп разгона поступательной скорости."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

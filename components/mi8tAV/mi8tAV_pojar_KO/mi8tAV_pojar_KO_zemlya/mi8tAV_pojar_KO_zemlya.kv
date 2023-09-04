@@ -1,0 +1,118 @@
+<mi8tAV_pojar_KO_zemlya>:
+    name: "Mi8tAV_pojar_KO_zemlya"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОЖАР В ОТСЕКЕ  ОБОГРЕВАТЕЛЯ НА ЗЕМЛЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "При возникновении пожара на стоянке"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "darkorange"
+                    size_hint_y: None
+
+                Label:
+                    text: "В этом случае необходимо:\n - выполнить действия в соответствии с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color];\n - выключить двигатели кранами останова;\n - обесточить вертолет."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_pojar_KO"; root.manager.transition.direction="left"
+
+                Label:
+                    text: "Если пожар не ликвидирован 1 и 2-й очередями баллонов. В этом случае необходимо применить ручные огнетушители."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDLabel:
+                    text: "При возникновении пожара на рулении "
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "darkorange"
+                    size_hint_y: None
+                Label:
+                    text: "В этом случае необходимо:\n - затормозить вертолет;\n - поставить вертолет на стояночный тормоз;\n - выполнить действия в соответствии с [color=#B22222][u]РЕКОМЕНДАЦИЯМИ[/u][/color];\n - выключить двигатели кранами останова;\n - обесточить вертолет."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    markup: True
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Если пожар не ликвидирован 1 и 2-й очередями баллонов. В этом случае необходимо применить ручные огнетушители."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "Красное светосигнальное табло на пульте системы пожаротушения [color=#FF0000]ПОЖАР В ОТСЕКЕ ОБОГРЕВ[/color].\n Табло ГОРИТ - ПОЖАР НЕ ЛИВИДИРОВАН\n Табло НЕ ГОРИТ - ПОЖАР ЛИКВИДИРОВАН "
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_pojar_KO"; root.manager.transition.direction="left"
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

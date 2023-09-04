@@ -1,0 +1,97 @@
+<mi8tAV_agb>:
+    name: "Mi8tAV_agb"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ОТКАЗ АВИАГОРИЗОНТА АГБ-ЗК"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "orange"
+
+                MDLabel:
+                    text: "ПРИЗНАКИ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "Отказ авиагоризонта АГБ-ЗК в ВИЗУАЛЬНОМ ПОЛЕТЕ определяется сравнением его показаний с положением вертолета относительно естественного горизонта,"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 8
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "в ПРИБОРНОМ ПОЛЕТЕ - сравнением с показаниями второго авиагоризонта и дублирующих приборов (указателя поворота и скольжения, вариометра, указателя скорости, компаса). При прекращении питания постоянным или переменным током появляется флажок на фоне шкалы."
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 10
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDLabel:
+                    text: "ДЕЙСТВИЯ:"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "tomato"
+                    size_hint_y: None
+                    underline: True
+
+                Label:
+                    text: "При отказе левого авиагоризонта пилотирование вертолета выполняется по правому, а при отказе обоих авиагоризонтов - по дублирующим приборам.\n Если полет при этом выполнялся по ППП, выполнение задания необходимо прекратить."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                Label:
+                    text: "После выключения левого АГБ поступление электрических сигналов крена и тангажа в автопилот прекращается, но с датчиков угловых скоростей сигналы в автопилот будут поступать, облегчая пилотирование вертолета. Поэтому при отказе левого АГБ выключать автопилот не следует."
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 15
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"

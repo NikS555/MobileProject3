@@ -1,0 +1,82 @@
+<mi8tAV_pojar_cab_zemlya>:
+    name: "Mi8tAV_pojar_cab_zemlya"
+    Screen:
+        ScrollView:
+            size: self.size
+            GridLayout:
+                cols: 1
+                spacing: "20dp"
+                padding: "20dp"
+                size_hint_y: None
+                height: self.minimum_height
+                width: self.minimum_width
+                MDLabel:
+                    text: "ПОЖАР В КАБИНЕ ВЕРТОЛЕТА НА ЗЕМЛЕ"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "red"
+
+                MDLabel:
+                    text: "При возникновении пожара на стоянке"
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "darkorange"
+                    size_hint_y: None
+
+                Label:
+                    text: "В этом случае бортмеханик и второй пилот по команде командира вертолета должны:\n - обеспечить покидание пассажирами вертолета;\n - выключить двигатели кранами останова;\n - обесточить вертолет;\n - выполнить действия, указанные в [color=#B22222][u]РЕКОМЕНДАЦИЯХ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    markup: True
+                    max_lines: 9
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_pojar_cab"; root.manager.transition.direction="left"
+
+                MDLabel:
+                    text: "При возникновении пожара на рулении "
+                    halign: "center"
+                    theme_text_color: "Custom"
+                    text_color: "darkorange"
+                    size_hint_y: None
+                Label:
+                    text: "В этом случае необходимо:\n - затормозить вертолет;\n - поставить вертолет на стояночный тормоз;\n - выключить двигатели кранами останова;\n - обесточить вертолет;\n - выполнить действия, указанные в [color=#B22222][u]РЕКОМЕНДАЦИЯХ[/u][/color]"
+                    halign: "left"
+                    text_size: 300, None
+                    max_lines: 8
+                    markup: True
+                    line_height: 1
+                    font_size: "12sp"
+                    theme_text_color: "Custom"
+                    text_color: "white"
+                    size_hint_y: None
+                    bold: True
+
+
+                MDRaisedButton:
+                    text: "РЕКОМЕНДАЦИИ"
+                    size_hint: 1, None
+                    md_bg_color: "firebrick"
+                    on_release: root.manager.current="Mi8tAV_pojar_cab"; root.manager.transition.direction="left"
+
+
+                MDRaisedButton:
+                    text: "ГЛАВНОЕ МЕНЮ"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="mainScreen"; root.manager.transition.direction="left"
+
+                MDRaisedButton:
+                    text: "НАЗАД"
+                    size_hint: 1, None
+                    md_bg_color: "blue"
+                    on_release: root.manager.current="Mi8tAV"; root.manager.transition.direction="left"
